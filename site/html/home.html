@@ -42,16 +42,22 @@
     <div class="container main">
         <div class="space"></div>
         <h1>Hello!</h1>
+        <div class="space"></div>
         <h1>Feedback/Questions?</h1>
         <div class="contact-form">
-            <form method="post" action="../../lib/contact-form-hander.php" id="contact-form">
-                <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-                <input name="email" type="text" class="form-control" placeholder="Your Email">
-                <textarea name="message" rows="4" class="form-control" placeholder="Message" required></textarea><br>
-                <input type="submit" class="form-control submit" value="SEND">
+            <form method="post" onsubmit="sent();" action="../../lib/contact-form-hander.php" id="contact-form">
+                <div class="row">
+                    <input name="name" type="text" class="form-control col-md-6" placeholder="Name">
+                    <input name="email" type="text" class="form-control col-md-6" placeholder="Email">
+                    <textarea name="message" rows="4" class="form-control col-12" placeholder="Message" required></textarea>
+                </div>
+                <br>
+                <input type="submit" id="submit" value="">
             </form>
         </div>
+        <div id="sent"><h1>Thank You!</h1></div>
     </div>
+    <div class="space"></div>
 
 </body>
 <!-- bootstrap and jquery -->

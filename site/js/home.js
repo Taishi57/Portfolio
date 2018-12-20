@@ -18,3 +18,11 @@ $('#contact').mouseover(function(){
 }).mouseleave(function(){
     $(this).attr('src','../../images/contact.png');
 });
+$('#submit').mouseover(function(){
+    $(this).css('background','url("../../images/send.gif") no-repeat').css('background-size','100%');
+}).mouseleave(function(){
+    $(this).css('background','url("../../images/send.png") no-repeat').css('background-size','100%');
+});
+function sent(){
+    $('#sent h1').css('visibility','visible');
+}
