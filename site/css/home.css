@@ -1,0 +1,38 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#ffe6cc;
+}
+.nav{
+    top: 0;
+    right:0;
+    position:fixed;
+}
+.navItem img{
+    width:100px;
+    margin:0px 20px;
+}
+.navbar{
+    background:none;
+    visibility: hidden;
+}
+.space{
+    padding:30px;
+}
+#name{
+    width:70%;
+    display: block;
+    margin:auto;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightgreen;
+    }
+    .nav{
+        visibility:hidden;
+    }
+    .navbar{
+        visibility:visible;
+    }
+  }

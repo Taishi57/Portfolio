@@ -1,0 +1,20 @@
+$('#home').mouseover(function(){
+    $(this).attr('src','../../images/home.gif');
+}).mouseleave(function(){
+    $(this).attr('src','../../images/home.png');
+});
+$('#about').mouseover(function(){
+    $(this).attr('src','../../images/about.gif');
+}).mouseleave(function(){
+    $(this).attr('src','../../images/about.png');
+});
+$('#works').mouseover(function(){
+    $(this).attr('src','../../images/works.gif');
+}).mouseleave(function(){
+    $(this).attr('src','../../images/works.png');
+});
+$('#contact').mouseover(function(){
+    $(this).attr('src','../../images/contact.gif');
+}).mouseleave(function(){
+    $(this).attr('src','../../images/contact.png');
+});
