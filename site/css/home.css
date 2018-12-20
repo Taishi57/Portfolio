@@ -31,7 +31,12 @@ body{
 }
 h1{
     font-family:chickadee;
-    font-size:5em}
+    font-size:5em;}
+p{
+    font-family:'Times New Roman', Times, serif;
+    font-size:1.5em;
+    text-align:left;
+}
 .contact-title{
     color:#fff;
     text-transform:uppercase;}
@@ -71,6 +76,12 @@ h1{
 @media only screen and (max-width: 600px) {
     body {
       background-color: lightgreen;
+    }
+    h1{
+        font-size:2em;
+    }
+    p{
+        font-size:1em;
     }
     .nav{
         visibility:hidden;
