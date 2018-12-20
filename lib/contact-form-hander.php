@@ -3,7 +3,7 @@
     $visitor_email = $_POST['email'];
     $message = $_POST['message'];
 
-    $email_from = 'hayakt@uw.edu';
+    $email_from = 'student.washington.edu/hayakt';
 
     $email_subject = "Email sent from your portfolio website!";
 
