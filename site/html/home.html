@@ -13,10 +13,10 @@
 <body>
     <!-- navgation bar -->
     <div class="nav">
-        <a href="" class="navItem"><img id="home" src="../../images/home.png" alt="" ></a>
-        <a href="" class="navItem"><img id="about" src="../../images/about.png" alt=""></a>
-        <a href="" class="navItem"><img id="works" src="../../images/works.png" alt=""></a>
-        <a href="" class="navItem"><img id="contact" src="../../images/contact.png" alt=""></a>
+        <a href="" class="navItem"><img id="home" src="../../images/home.png"></a>
+        <a href="" class="navItem"><img id="about" src="../../images/about.png"></a>
+        <a href="" class="navItem"><img id="works" src="../../images/works.png"></a>
+        <a href="" class="navItem"><img id="contact" src="../../images/contact.png"></a>
     </div>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -25,10 +25,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a></li>
-                <li class="nav-item active"><a class="nav-link" href="#">ABOUT<span class="sr-only">(current)</span></a></li>
-                <li class="nav-item active"><a class="nav-link" href="#">WORKS<span class="sr-only">(current)</span></a></li>
-                <li class="nav-item active"><a class="nav-link" href="#">CONTACT<span class="sr-only">(current)</span></a></li>
+                <li class="nav-item active"><a class="nav-link" href="#"><img src="../../images/home.png"><span class="sr-only">(current)</span></a></li>
+                <li class="nav-item active"><a class="nav-link" href="#"><img src="../../images/about.png"><span class="sr-only">(current)</span></a></li>
+                <li class="nav-item active"><a class="nav-link" href="#"><img src="../../images/works.png"><span class="sr-only">(current)</span></a></li>
+                <li class="nav-item active"><a class="nav-link" href="#"><img src="../../images/contact.png"><span class="sr-only">(current)</span></a></li>
             </ul>
         </div>
     </nav>
@@ -37,6 +37,20 @@
     <div class="container">
         <div class="space"></div>
         <img id="name" src="../../images/taishi.gif">
+        <div class="space"></div>
+    </div>
+    <div class="container main">
+        <div class="space"></div>
+        <h1>Hello!</h1>
+        <h1>Feedback/Questions?</h1>
+        <div class="contact-form">
+            <form method="post" action="../../lib/contact-form-hander.php" id="contact-form">
+                <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                <input name="email" type="text" class="form-control" placeholder="Your Email">
+                <textarea name="message" rows="4" class="form-control" placeholder="Message" required></textarea><br>
+                <input type="submit" class="form-control submit" value="SEND">
+            </form>
+        </div>
     </div>
 
 </body>
