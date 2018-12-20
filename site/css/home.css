@@ -24,7 +24,7 @@ body{
     display: block;
     margin:auto;}
 @font-face { 
-    font-family: chickadee; src: url('../../lib/chickadee.TTF'); } 
+    font-family: chickadee; src: url('../../lib/chickadee.ttf'); } 
 .main{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
