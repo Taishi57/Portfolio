@@ -1,11 +1,11 @@
 <?php
-    $name=$_Post['name'];
-    $visitor_email = $_Post['email'];
+    $name = $_POST['name'];
+    $visitor_email = $_POST['email'];
     $message = $_POST['message'];
 
     $email_from = 'hayakt@uw.edu';
 
-    $email_subject = "New Form Submission";
+    $email_subject = "Email sent from your portfolio website!";
 
     $email_body = "User Name: $name.\n".
                     "User Email: $visitor_email.\n".
