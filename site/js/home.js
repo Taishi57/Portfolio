@@ -24,11 +24,9 @@ $('#submit').mouseover(function(){
     $(this).css('background','url("../../images/send.png") no-repeat').css('background-size','100%');
 });
 $('#door').mouseover(function(){
-    $(this).attr('src','../../images/doorOpen.png');
+    $(this).attr('src','../../images/doorOpen.gif');
 }).mouseleave(function(){
     $(this).attr('src','../../images/doorClose.png');
-}).click(function(){
-    $(this).attr('src','../../images/doorOpen.png');
 });
 function sent(){
     $('#sent h1').css('visibility','visible');
