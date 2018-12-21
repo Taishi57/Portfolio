@@ -8,10 +8,10 @@ body{
     right:0;
     position:fixed;}
 .navItem img{
-    width:100px;
+    width:140px;
     margin:0px 20px;}
 .nav-item img{
-    width:100px;}
+    width:140px;}
 .navbar{
     background:none;
     visibility: hidden;}
@@ -35,7 +35,7 @@ h1{
     font-size:5em;}
 p{
     font-family:'Times New Roman', Times, serif;
-    font-size:1.5em;
+    font-size:1.6em;
     text-align:left;}
 /* */
 /* forms */
@@ -51,7 +51,8 @@ p{
 }
 .row .form-control:focus {
     background:none;
-    box-shadow: none;}
+    box-shadow: none;
+    color:black;}
     
 #submit{
     background: url("../../images/send.png") no-repeat;
