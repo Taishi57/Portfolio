@@ -1,5 +1,3 @@
-html {
-    scroll-behavior: smooth;}
 body{
     background-color:#f9f2ec;}
 /* Navbars */
@@ -19,10 +17,6 @@ body{
 .space{
     padding:40px;
 }
-#name{
-    width:70%;
-    display: block;
-    margin:auto;}
 @font-face { 
     font-family: chickadee; src: url('../../lib/chickadee.ttf'); } 
 .main{
@@ -38,39 +32,6 @@ p{
     font-size:1.5em;
     text-align:left;}
 /* */
-/* forms */
-.form-control{
-    width:100%;
-    background:transparent;
-    border:none;
-    border-radius: 0;
-    outline:none;
-    border-bottom:2px solid gray;
-    font-size:22px;
-    font-family:'Times New Roman', Times, serif;
-}
-.row .form-control:focus {
-    background:none;
-    box-shadow: none;}
-    
-#submit{
-    background: url("../../images/send.png") no-repeat;
-    background-size:100%;
-    border-color:transparent;
-    width:100%;
-    margin:auto;
-    max-width:700px;
-    height:0;
-    padding-top:9%;
-    margin-top:20px;
-}
-#submit:hover{
-    cursor:pointer;}
-#sent{
-    height:80px;}
-#sent h1{
-    visibility:hidden;}
-/*  */
 @media only screen and (max-width: 600px) {
     h1{font-size:50px;}
     p{font-size:20px;}
