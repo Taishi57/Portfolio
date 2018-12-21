@@ -23,6 +23,11 @@ $('#submit').mouseover(function(){
 }).mouseleave(function(){
     $(this).css('background','url("../../images/send.png") no-repeat').css('background-size','100%');
 });
+$('#door').mouseover(function(){
+    $(this).attr('src','../../images/doorOpen.png');
+}).mouseleave(function(){
+    $(this).attr('src','../../images/doorClose.png');
+});
 function sent(){
     $('#sent h1').css('visibility','visible');
 }

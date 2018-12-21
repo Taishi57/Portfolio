@@ -13,10 +13,10 @@
 <body>
     <!-- navgation bar -->
     <div class="nav">
-        <a href="" class="navItem"><img id="home" src="../../images/home.png"></a>
-        <a href="" class="navItem"><img id="about" src="../../images/about.png"></a>
-        <a href="" class="navItem"><img id="works" src="../../images/works.png"></a>
-        <a href="" class="navItem"><img id="contact" src="../../images/contact.png"></a>
+        <a href="#one" class="navItem"><img id="home" src="../../images/home.png"></a>
+        <a href="#two" class="navItem"><img id="about" src="../../images/about.png"></a>
+        <a href="#three" class="navItem"><img id="works" src="../../images/works.png"></a>
+        <a href="#four" class="navItem"><img id="contact" src="../../images/contact.png"></a>
     </div>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -25,19 +25,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a class="nav-link" href="#"><img src="../../images/home.png"><span class="sr-only">(current)</span></a></li>
-                <li class="nav-item active"><a class="nav-link" href="#"><img src="../../images/about.png"><span class="sr-only">(current)</span></a></li>
-                <li class="nav-item active"><a class="nav-link" href="#"><img src="../../images/works.png"><span class="sr-only">(current)</span></a></li>
-                <li class="nav-item active"><a class="nav-link" href="#"><img src="../../images/contact.png"><span class="sr-only">(current)</span></a></li>
+                <li class="nav-item active"><a class="nav-link" href="#one"><img src="../../images/home.png"><span class="sr-only">(current)</span></a></li>
+                <li class="nav-item active"><a class="nav-link" href="#two"><img src="../../images/about.png"><span class="sr-only">(current)</span></a></li>
+                <li class="nav-item active"><a class="nav-link" href="#three"><img src="../../images/works.png"><span class="sr-only">(current)</span></a></li>
+                <li class="nav-item active"><a class="nav-link" href="#four"><img src="../../images/contact.png"><span class="sr-only">(current)</span></a></li>
             </ul>
         </div>
     </nav>
     <!-- navigation bar -->
     <!-- home -->
     <div class="container">
-        <div class="space"></div>
+        <div class="space" id="one"></div>
         <img id="name" src="../../images/taishi.gif">
-        <div class="space"></div>
+        <div class="space" id="two"></div>
     </div>
     <div class="container main">
         <div class="space"></div>
@@ -51,8 +51,12 @@
             I like to try out many things to discover my strengths and weaknesses so that I can understand more about myself. 
             I enjoy looking at my results, whether the art turned out well or not, especially when I do something I've never done before.</p>
         <div class="space"></div>
+        <div class="space" id="three"></div>
+        <h1>My works</h1>
+        <a href="works.html"><img id="door" src="../../images/doorClose.png"></a>
         <div class="space"></div>
-        <h1>Feedback/Questions?</h1>
+        <div class="space" id="four"></div>
+        <h1>Feedback/Questions</h1>
         <div class="contact-form">
             <form method="post" onsubmit="sent();" action="../../lib/contact-form-hander.php" id="contact-form">
                 <div class="row">
