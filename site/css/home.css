@@ -1,7 +1,8 @@
 html {
     scroll-behavior: smooth;}
 body{
-    background-color:#f9f2ec;}
+    background-color:#645eb5;
+    color:#eeeeee;}
 /* Navbars */
 .nav{
     top: 0;
@@ -55,7 +56,6 @@ p{
 .row .form-control:focus {
     background:none;
     box-shadow: none;
-    border:none;
     color:black;}
     
 #submit{

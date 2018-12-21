@@ -15,7 +15,7 @@ body{
     visibility: hidden;}
 /*  */
 .space{
-    padding:40px;
+    padding:8vh;
 }
 @font-face { 
     font-family: chickadee; src: url('../../lib/chickadee.ttf'); } 
