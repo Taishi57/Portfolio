@@ -5,10 +5,12 @@ body{
 .nav{
     top: 0;
     right:0;
-    position:fixed;}
+    position:fixed;
+    z-index:1;}
 .navItem img{
     width:140px;
-    margin:0px 20px;}
+    margin:0px 20px;
+    z-index: 2;}
 .nav-item img{
     width:140px;}
 .navbar{
@@ -22,7 +24,16 @@ body{
     font-family: chickadee; src: url('../../lib/chickadee.ttf'); } 
 .main{
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;}
+.artworks{
     text-align: center;
+}
+.thumbnail {
+    width:250px;
+    height:200px;
+    object-fit: cover;
+    object-position: 0 40%;
+    margin:1%;
 }
 /* fonts */
 h1{
@@ -33,11 +44,11 @@ p{
     font-size:1.5em;
     text-align:left;}
 /* */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     h1{font-size:50px;}
     p{font-size:20px;}
     .nav{visibility:hidden;}
     .navbar{
         visibility:visible;
-        background-color:#f9f2ec;}
+        background-color:#2c447d;}
   }
