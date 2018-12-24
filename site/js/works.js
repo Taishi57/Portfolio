@@ -20,13 +20,13 @@ $('#icon-contact').mouseover(function(){
 });
 var artworks = [
     {
-        name:'lemon',
+        name:'Lemon',
         src:'../../artworks/lemon.jpg'},
     {
-        name:'tomato',
+        name:'Tomato',
         src:'../../artworks/tomato.jpg'},
     {
-        name:'seattle',
+        name:'Seattle',
         src:'../../artworks/seattle.png'},
     {   
         name:'Light in Dark',
@@ -35,7 +35,7 @@ var artworks = [
         name:'Desk',
         src:'../../artworks/desk.jpg'},
     {
-        name:'pepper',
+        name:'Pepper',
         src:'../../artworks/pepper.jpg'},
     {
         name:'Shoe',
@@ -44,8 +44,7 @@ var artworks = [
         name:'Seesaw',
         src:'../../artworks/seesaw.gif'}
 ];
-var order = [1,6,2,0,4,5,3,7]
+var order = [3,6,2,0,4,5,1,7]
 for(i = 0; i < artworks.length; i++){
-    $('.artworks').append('<img class="thumbnail" src="'+ artworks[order[i]].src +'"></img>');
-
+    $('.artworks').append('<div class="rows"><div class="thumbnail"><img src="'+ artworks[order[i]].src +'"></img></div><div class="description"><h1>'+ artworks[order[i]].name +'</h1><hr><p>'+ artworks[order[i]].description +'</p></div></div>');
 }
