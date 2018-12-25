@@ -21,7 +21,8 @@ $('#icon-contact').mouseover(function(){
 var artworks = [
     {
         name:'Lemon',
-        src:'../../artworks/lemon.jpg'},
+        src:'../../artworks/lemon.jpg',
+        description:''},
     {
         name:'Tomato',
         src:'../../artworks/tomato.jpg'},
@@ -38,7 +39,7 @@ var artworks = [
         name:'Pepper',
         src:'../../artworks/pepper.jpg'},
     {
-        name:'Shoe',
+        name:'Untied',
         src:'../../artworks/shoe.jpg'},
     {
         name:'Seesaw',

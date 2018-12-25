@@ -28,7 +28,7 @@ body{
 .rows{
     width:100%;
     display:flex;
-    margin: 3vh;
+    margin:3vw 0;
 }
 .thumbnail {
     flex:1;
@@ -49,6 +49,7 @@ body{
 }
 .description h1{
     font-size:50px;
+    line-height: 5px;
 }
 hr{
     height: 8px;
@@ -66,7 +67,8 @@ p{
     text-align:left;}
 /* */
 @media only screen and (max-width: 750px) {
-    h1{font-size:50px;}
+    h1{ font-size:50px;
+        line-height:0px;}
     .description h1{font-size:30px;}
     p{font-size:15px;}
     .nav{visibility:hidden;}
