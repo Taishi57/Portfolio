@@ -11,6 +11,7 @@
 body{
     background-color:#2c447d;
     overflow:hidden;
+    position:fixed;
     color:#eeeeee;}
 /* Navbars */
 .nav{
@@ -75,7 +76,7 @@ p{
     text-align:left;}
 /* */
 @media only screen and (max-width: 750px) {
-    h1{ font-size:50px;
+    .description h1{ font-size:50px;
         line-height:0px;}
     .description h1{font-size:30px;}
     p{font-size:15px;}
