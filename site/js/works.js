@@ -50,5 +50,6 @@ for(i = 0; i < artworks.length; i++){
     $('.artworks').append('<div class="rows"><div class="thumbnail"><img src="'+ artworks[order[i]].src +'"></img></div><div class="description"><h1>'+ artworks[order[i]].name +'</h1><hr><p>'+ artworks[order[i]].description +'</p></div></div>');
 }
 window.addEventListener("load",function(){
-    $('.thumbnail').css('background','url("")');
+    $('.loading').remove('.loading');
+    $('body').css('overflow','visible');
 })

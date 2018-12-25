@@ -1,5 +1,16 @@
+.loading{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    background:#2c447d;
+    display:flex;
+}
+.loading img{
+    margin:auto;
+}
 body{
     background-color:#2c447d;
+    overflow:hidden;
     color:#eeeeee;}
 /* Navbars */
 .nav{
