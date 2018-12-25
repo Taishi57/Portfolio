@@ -25,28 +25,35 @@ var artworks = [
         description:''},
     {
         name:'Tomato',
-        src:'../../artworks/tomato.jpg'},
+        src:'../../artworks/tomato.jpg',
+        description:'Digital artworks'},
     {
         name:'Seattle',
-        src:'../../artworks/seattle.png'},
+        src:'../../artworks/seattle.png',
+        description:'Lorem ipsum dolor sit amet, nam te malis minim verterem, vix hinc eros at, omnesque pertinacia eum id. Eu ipsum virtute pro, cum in dicunt accusamus definiebas, in nibh dolorem sed. His case veri dissentiunt ne, vim elitr accusamus ea. Doming phaedrum ne eam'},
     {   
         name:'Light in Dark',
-        src:'../../artworks/lightInDark.jpg'},
+        src:'../../artworks/lightInDark.jpg',
+        description:'Self-portrait charcoal drawing'},
     {
         name:'Desk',
-        src:'../../artworks/desk.jpg'},
+        src:'../../artworks/desk.jpg',
+        description:'Graphite pencil'},
     {
         name:'Pepper',
-        src:'../../artworks/pepper.jpg'},
+        src:'../../artworks/pepper.jpg',
+        description:''},
     {
         name:'Untied',
-        src:'../../artworks/shoe.jpg'},
+        src:'../../artworks/shoe.jpg',
+        description:'Graphite pencil'},
     {
         name:'Seesaw',
-        src:'../../artworks/seesaw.gif'}
+        src:'../../artworks/seesaw.gif',
+        description:''}
 ];
-var order = [3,6,2,0,4,5,1,7]
-for(i = 0; i < artworks.length; i++){
+var order = [2,3,4,6,1]
+for(i = 0; i < order.length; i++){
     $('.artworks').append('<div class="rows"><div class="thumbnail"><img src="'+ artworks[order[i]].src +'"></img></div><div class="description"><h1>'+ artworks[order[i]].name +'</h1><hr><p>'+ artworks[order[i]].description +'</p></div></div>');
 }
 window.addEventListener("load",function(){
