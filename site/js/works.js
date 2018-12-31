@@ -56,8 +56,18 @@ var order = [2,3,4,6,1]
 for(i = 0; i < order.length; i++){
     $('.artworks').append('<div class="rows"><div class="thumbnail"><img src="'+ artworks[order[i]].src +'"></img></div><div class="description"><h1>'+ artworks[order[i]].name +'</h1><hr><p>'+ artworks[order[i]].description +'</p></div></div>');
 }
+//loading screen
 window.addEventListener("load",function(){
     $('.loading').remove('.loading');
     $('body').css('overflow','visible');
     $('body').css('position','static');
+});
+//zoom
+$('.thumbnail img').click(function(){
+    var $imgsrc = $(this).attr('src');
+    $('.zoom').css('display','flex');
+    $('.zoom img').attr('src',$imgsrc);
+});
+$('.zoom').click(function(){
+    $('.zoom').css('display','none');
 })
