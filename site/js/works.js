@@ -30,7 +30,7 @@ var artworks = [
     {   
         name:'Light in Dark',
         src:'../../artworks/lightInDark.jpg',
-        description:'Self-portrait charcoal drawing'},
+        description:'The medium of this drawing is charcoal. I wanted to create a piece that has a large contrast, the inital source of this picture is me in the dark with one bright light source spotted towards me. The hood is for the aesthetic feel. It somewhat represents that I am insecure in the dark, and I am drawn towards the light, possibly meaning freedom or confort.'},
     {
         name:'Desk',
         src:'../../artworks/desk.jpg',
