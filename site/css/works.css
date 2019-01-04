@@ -14,6 +14,7 @@
     height:100vh;
     background:rgba(0,0,0,0.5);
     display: none;
+    z-index:2;
 }
 .zoom img{
     margin:auto;
@@ -30,11 +31,11 @@ body{
     top: 0;
     right:0;
     position:fixed;
-    z-index:1;}
+    z-index:3;}
 .navItem img{
     width:140px;
     margin:0px 20px;
-    z-index: 2;}
+    z-index: 3;}
 .nav-item img{
     width:140px;}
 .navbar{
@@ -51,7 +52,7 @@ body{
 .rows{
     width:100%;
     display:flex;
-    margin:3vw 0;
+    margin-bottom:3vw;
 }
 .thumbnail {
     flex:1;
@@ -70,6 +71,13 @@ body{
 .description h1{
     font-size:50px;
     line-height: 5px;
+}
+.otherThumbnail{
+    margin-bottom: 2vw
+}
+.otherThumbnail img{
+    width:100%;
+    object-fit: contain;
 }
 hr{
     height: 8px;

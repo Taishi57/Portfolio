@@ -43,6 +43,7 @@ p{
 /* */
 /* forms */
 .form-control{
+    color:white;
     width:100%;
     background:transparent;
     border:none;
@@ -56,6 +57,7 @@ p{
     background:none;
     box-shadow: none;
     color:white;}
+
 .form-control::-webkit-input-placeholder{
     color:#cccccc;
     font-style: italic;

@@ -12,6 +12,6 @@
 
     mail($to,$subject,$email_body,$headers);
 
-    // header("Location: ../site/html/home.html");
+    header("Location: ../site/html/home.html");
 
 ?>
