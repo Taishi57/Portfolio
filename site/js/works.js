@@ -34,15 +34,15 @@ var artworks = [
     {
         name:'Desk',
         src:'../../artworks/desk.jpg',
-        description:'Graphite pencil'},
+        description:'This drawing was drawn with graphite pencils.'},
     {
         name:'Untied',
         src:'../../artworks/shoe.jpg',
-        description:'Graphite pencil'},
+        description:'This piece was very fun to draw, the multiple textures of the shoe such as the leather and the rubber made me use different techniques to be able to accurately represent the surface. This also gave me an oppertunity to try out the different degrees of the pencil (6H-6B) and see how the different hardness affects how my drawing looks.'},
     {
         name:'Totally Realistic Soccer',
         src:'../../artworks/soccer.gif',
-        description:''}
+        description:'This gif animation was created with an app called <i>Folioscope</i> which lets to drawn flipnote animation on your smartphone/tablet. They are all drawn frame by frame, unlike latest animating programs that automatically generates the movement for you. This animation\'s theme is soccer, I tried to make a humorous scene of characters doing ridiculous "soccer".'}
 ];
 var order = [0,1,2,4,5]
 for(i = 0; i < order.length; i++){

@@ -1,8 +1,10 @@
+html {
+    scroll-behavior: smooth;}
 .loading{
     position: absolute;
     width:100vw;
     height:100vh;
-    background:#2c447d;
+    background: linear-gradient(#be6262, #19316d) fixed;
     display:flex;
 }
 .loading img{
@@ -22,7 +24,7 @@
     max-width:100%;
 }
 body{
-    background-color:#2c447d;
+    background: linear-gradient(#be6262, #19316d) fixed;
     overflow:hidden;
     position:fixed;
     color:#eeeeee;}
