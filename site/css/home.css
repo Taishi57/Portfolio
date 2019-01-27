@@ -16,8 +16,6 @@ body{
 .navbar{
     background:none;
     visibility: hidden;}
-.navbar .navbar-toggler  {
-    background-color: white;}
 /*  */
 .space{
     padding:8vh;
@@ -84,12 +82,11 @@ p{
     visibility:hidden;}
 /*  */
 @media only screen and (max-width: 750px) {
-    body{background:#19316d;}
+    body{background:#283e7a;}
     h1{font-size:50px;}
     p{font-size:20px;}
     .nav{visibility:hidden;}
     .navbar{
-        visibility:visible;
-        background-color:#19316d;}
+        visibility:visible;}
     #door{margin:0;}
   }
