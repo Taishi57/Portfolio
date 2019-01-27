@@ -10,14 +10,6 @@ html {
 .loading img{
     margin:auto;
 }
-.bg{
-    position: fixed;
-    width:100vw;
-    height:100vh;
-    background: linear-gradient(#a5548d, #19316d) fixed;
-    z-index: -1;
-    -webkit-backface-visibility: hidden;
-}
 .zoom{
     position: fixed;
     width:100vw;
@@ -32,7 +24,7 @@ html {
     max-width:100%;
 }
 body{
-    /* background: linear-gradient(#a5548d, #19316d) fixed; */
+    background: linear-gradient(#a5548d, #19316d) fixed;
     overflow:hidden;
     position:fixed;
     color:#eeeeee;}
@@ -108,6 +100,7 @@ p{
     text-align:left;}
 /* */
 @media only screen and (max-width: 750px) {
+    body{background:#19316d;}
     .description h1{ font-size:50px;
         line-height:0px;}
     .description h1{font-size:30px;}
@@ -115,5 +108,5 @@ p{
     .nav{visibility:hidden;}
     .navbar{
         visibility:visible;
-        background-color:#333333;}
+        background-color:#19316d;}
   }

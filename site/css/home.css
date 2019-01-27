@@ -3,14 +3,6 @@ html {
 body{
     background: linear-gradient(#3c857b, #19316d) fixed;
     color:#eeeeee;}
-.bg{
-    position: fixed;
-    width:100vw;
-    height:100vh;
-    background: linear-gradient(#3c857b, #19316d) fixed;
-    z-index: -1;
-    -webkit-backface-visibility: hidden;
-}
 /* Navbars */
 .nav{
     top: 0;
@@ -92,12 +84,12 @@ p{
     visibility:hidden;}
 /*  */
 @media only screen and (max-width: 750px) {
+    body{background:#19316d;}
     h1{font-size:50px;}
     p{font-size:20px;}
     .nav{visibility:hidden;}
     .navbar{
         visibility:visible;
-        background-color:#333333;}
-    #door{
-        margin:0;}
+        background-color:#19316d;}
+    #door{margin:0;}
   }
