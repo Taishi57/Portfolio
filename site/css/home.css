@@ -9,6 +9,7 @@ body{
     height:100vh;
     background: linear-gradient(#3c857b, #19316d) fixed;
     z-index: -1;
+    -webkit-backface-visibility: hidden;
 }
 /* Navbars */
 .nav{
