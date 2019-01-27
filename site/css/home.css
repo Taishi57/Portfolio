@@ -1,23 +1,15 @@
 html {
     scroll-behavior: smooth;}
-body:before {
-  content: "";
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
-  background: linear-gradient(#2e596d, #19316d) fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-    body{
-    background: linear-gradient(#2e596d, #19316d) fixed;
+body{
+    background: linear-gradient(#3c857b, #19316d) fixed;
     color:#eeeeee;}
+.bg{
+    position: fixed;
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(#3c857b, #19316d) fixed;
+    z-index: -1;
+}
 /* Navbars */
 .nav{
     top: 0;
@@ -31,6 +23,8 @@ body:before {
 .navbar{
     background:none;
     visibility: hidden;}
+.navbar .navbar-toggler  {
+    background-color: white;}
 /*  */
 .space{
     padding:8vh;
@@ -96,13 +90,13 @@ p{
 #sent h1{
     visibility:hidden;}
 /*  */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     h1{font-size:50px;}
     p{font-size:20px;}
     .nav{visibility:hidden;}
     .navbar{
         visibility:visible;
-        background-color:#2c447d;}
+        background-color:#333333;}
     #door{
         margin:0;}
   }
