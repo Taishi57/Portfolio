@@ -88,5 +88,6 @@ p{
     .nav{visibility:hidden;}
     .navbar{
         visibility:visible;}
+    #name{width:100%;}
     #door{margin:0;}
   }
