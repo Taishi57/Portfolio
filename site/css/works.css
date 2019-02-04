@@ -72,9 +72,7 @@ body{
 }
 .description h1{
     font-size:50px;
-    border-bottom: 2px solid;
-    border-image: linear-gradient(90deg, transparent,white, transparent);
-    border-image-slice: 1;
+    border-bottom: 2px solid white;
 }
 .otherThumbnail{
     margin-bottom: 2vw
@@ -96,6 +94,7 @@ p{
 @media only screen and (max-width: 750px) {
     body{background:#283e7a;}
     .loading{background:#283e7a;}
+    .loading img{width:40%;}
     .description h1{
         font-size:30px;}
     p{font-size:15px;
