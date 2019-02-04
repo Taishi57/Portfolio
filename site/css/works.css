@@ -72,7 +72,9 @@ body{
 }
 .description h1{
     font-size:50px;
-    line-height: 5px;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(90deg, transparent,white, transparent);
+    border-image-slice: 1;
 }
 .otherThumbnail{
     margin-bottom: 2vw
@@ -81,12 +83,6 @@ body{
     width:100%;
     object-fit: contain;
 }
-hr{
-    height: 8px;
-    background-image: linear-gradient(90deg, transparent,white, transparent);
-    border: 0;
-    height: 2px;
-}
 /* fonts */
 h1{
     font-family:chickadee;
@@ -94,15 +90,16 @@ h1{
 p{
     font-family:sans-serif, Helvetica, sans-serif;
     font-size:1.5em;
+    line-height:35px;
     text-align:left;}
 /* */
 @media only screen and (max-width: 750px) {
     body{background:#283e7a;}
     .loading{background:#283e7a;}
-    .description h1{ font-size:50px;
-        line-height:0px;}
-    .description h1{font-size:30px;}
-    p{font-size:15px;}
+    .description h1{
+        font-size:30px;}
+    p{font-size:15px;
+    line-height:18px}
     .nav{visibility:hidden;}
     .navbar{
         visibility:visible;}

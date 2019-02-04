@@ -46,7 +46,7 @@ var artworks = [
 ];
 var order = [0,1,2,4,5]
 for(i = 0; i < order.length; i++){
-    $('.artworks').append('<div class="rows"><div class="thumbnail"><img src="'+ artworks[order[i]].src +'"></img></div><div class="description"><h1>'+ artworks[order[i]].name +'</h1><hr><p>'+ artworks[order[i]].description +'</p></div></div>');
+    $('.artworks').append('<div class="rows"><div class="thumbnail"><img src="'+ artworks[order[i]].src +'"></img></div><div class="description"><h1>'+ artworks[order[i]].name +'</h1><p>'+ artworks[order[i]].description +'</p></div></div>');
 }
 var other = ['battlefield','blueberry','cyborg','forte','lemon','penny','stationary','toast','uw'];
 for(i=0; i < other.length; i++){

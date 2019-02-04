@@ -84,7 +84,7 @@ p{
 @media only screen and (max-width: 750px) {
     body{background:#283e7a;}
     h1{font-size:50px;}
-    p{font-size:20px;}
+    p{font-size:16px;}
     .nav{visibility:hidden;}
     .navbar{
         visibility:visible;}
