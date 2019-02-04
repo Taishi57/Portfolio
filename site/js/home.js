@@ -31,3 +31,6 @@ $('#door').mouseover(function(){
 function sent(){
     $('#sent h1').css('visibility','visible');
 }
+$('.nav-item').on("click", "a:not([data-toggle])", null, function () {
+    $('.collapse').collapse('hide');
+});
