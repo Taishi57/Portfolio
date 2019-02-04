@@ -72,6 +72,6 @@ $('.otherThumbnail img').click(function(){
 $('.zoom').click(function(){
     $('.zoom').css('display','none');
 })
-$('.nav-item').on("click", "a:not([data-toggle])", null, function () {
+$('.collapse').on("click", "a:not([data-toggle])", null, function () {
     $('.collapse').collapse('hide');
 });
