@@ -40,8 +40,7 @@ body{
     z-index: 3;}
 .nav-item img{
     width:100px;
-    margin:-15px;
-    border:black solid 1px;}
+    margin-bottom:-15px}
 .navbar{
     background:none;
     visibility: hidden;}
