@@ -90,5 +90,6 @@ p{
         visibility:visible;}
     #name{width:100%;}
     #door{margin:0,0,0,0;
+        padding-right:20px;
         width:80%}
   }
