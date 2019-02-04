@@ -89,5 +89,6 @@ p{
     .navbar{
         visibility:visible;}
     #name{width:100%;}
-    #door{margin:0;}
+    #door{margin:0;
+        width:40%}
   }
