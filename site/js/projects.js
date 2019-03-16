@@ -18,7 +18,7 @@ $('#icon-contact').mouseover(function(){
 }).mouseleave(function(){
     $(this).attr('src','../../images/contact.png');
 });
-var artworks = [
+var projects = [
     {
         name:'Tomato',
         src:'../../artworks/tomato.jpg',
@@ -31,26 +31,9 @@ var artworks = [
         name:'Light in Dark',
         src:'../../artworks/lightInDark.jpg',
         description:'The medium of this drawing is charcoal. I wanted to create a piece that has a large contrast, the initial source of this picture is me in the dark with one bright light source spotted towards me. The hood is for the aesthetic feel. It somewhat represents that I am insecure in the dark, and I am drawn towards the light, possibly meaning freedom or confort.'},
-    {
-        name:'Desk',
-        src:'../../artworks/desk.jpg',
-        description:'This drawing was drawn with graphite pencils.'},
-    {
-        name:'Untied',
-        src:'../../artworks/shoe.jpg',
-        description:'This piece was very fun to draw, the multiple textures of the shoe such as the leather and the rubber made me use different techniques to be able to accurately represent the surface. This also gave me an opportunity to try out the different degrees of the pencil (6H-6B) and see how the different hardness affects how my drawing looks.'},
-    {
-        name:'Totally Realistic Soccer',
-        src:'../../artworks/soccer.gif',
-        description:'This gif animation was created with an app called <i>Folioscope</i> which lets to drawn flipnote animation on your smartphone/tablet. They are all drawn frame by frame, unlike latest animating programs that automatically generates the movement for you. This animation\'s theme is soccer, I tried to make a humorous scene of characters doing ridiculous "soccer".'}
-];
-var order = [0,1,2,4,5]
-for(i = 0; i < order.length; i++){
-    $('.artworks').append('<div class="rows"><div class="thumbnail"><img src="'+ artworks[order[i]].src +'"></img></div><div class="description"><h1>'+ artworks[order[i]].name +'</h1><p>'+ artworks[order[i]].description +'</p></div></div>');
-}
-var other = ['battlefield','blueberry','cyborg','forte','lemon','penny','stationary','toast','uw'];
-for(i=0; i < other.length; i++){
-    $('.other').append('<div class="col-3 col-md-2"><div class="otherThumbnail"><img src="../../artworks/other/'+other[i]+'.jpg"></div></div>');
+    ];
+for(i = 0; i < projects.length; i++){
+    $('.projects').append('<div class="rows"><div class="thumbnail"><img src="'+ projects[i].src +'"></img></div><div class="description"><h1>'+ projects[i].name +'</h1><p>'+ projects[i].description +'</p></div></div>');
 }
 //loading screen
 window.addEventListener("load",function(){
@@ -58,17 +41,3 @@ window.addEventListener("load",function(){
     $('body').css('overflow','visible');
     $('body').css('position','static');
 });
-//zoom
-$('.thumbnail img').click(function(){
-    var $imgsrc = $(this).attr('src');
-    $('.zoom').css('display','flex');
-    $('.zoom img').attr('src',$imgsrc);
-});
-$('.otherThumbnail img').click(function(){
-    var $imgsrc = $(this).attr('src');
-    $('.zoom').css('display','flex');
-    $('.zoom img').attr('src',$imgsrc);
-});
-$('.zoom').click(function(){
-    $('.zoom').css('display','none');
-})

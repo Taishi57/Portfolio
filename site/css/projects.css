@@ -4,7 +4,7 @@ html {
     position: absolute;
     width:100vw;
     height:100vh;
-    background: linear-gradient(#a5548d, #19316d) fixed;
+    background: linear-gradient(#19316d,#a5548d) fixed;
     display:flex;
 }
 .loading img{
@@ -24,7 +24,7 @@ html {
     max-width:100%;
 }
 body{
-    background: linear-gradient(#a5548d, #19316d) fixed;
+    background: linear-gradient(#19316d,#a5548d) fixed;
     overflow:hidden;
     position:fixed;
     color:#eeeeee;}
@@ -58,17 +58,13 @@ body{
     margin-bottom:3vw;
 }
 .thumbnail {
-    flex:1;
+    flex:2;
     width:300px;
 }
 .thumbnail img{
     width:100%;
     object-fit: contain;
     border-radius:3%;
-}
-.thumbnail img:hover{
-    box-shadow: 0 0 10px white;
-    cursor:pointer;
 }
 .description{
     text-align:center;
@@ -86,7 +82,7 @@ body{
     width:100%;
     object-fit: contain;
 }
-.toProject{
+.toWorks{
     color:rgba(255,255,255,0.2);
     position: fixed;
     height:100vh; 
@@ -94,10 +90,10 @@ body{
     z-index:3;
     pointer-events: none;
 }
-.toProject p{
-    text-align: right;
+.toWorks p{
+    text-align: left;
     position: absolute;
-    right:20pt;
+    left:20pt;
     top:50%;
     cursor: pointer;
     background-color:rgba(0,0,0,0.2);
@@ -105,7 +101,7 @@ body{
     border-radius: 5%;
     pointer-events: auto;
 }
-.toProject p:hover{
+.toWorks p:hover{
     color:white;
     background-color:rgba(0,0,0,0.4);
 }
