@@ -20,7 +20,7 @@ $('#icon-contact').mouseover(function(){
 });
 var projects = [
     {
-        name:'Tomato',
+        name:'Connection with Me and Technology',
         src:'../../artworks/tomato.jpg',
         description:'This was drawn with an iPad Pro using digital colored pencil. My though process of this was very simple, I wanted to draw fruits and vegetables realistically, but that is way too cliche, so I decided to crush the fruits. This not only avoids the common fruits drawings, but it adds to the challenge of drawing the juice of the interior. This drawing really tested my observation use of colors to be able to successfully draw the fruit realistically.'},
     {

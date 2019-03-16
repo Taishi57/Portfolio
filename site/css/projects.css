@@ -6,22 +6,10 @@ html {
     height:100vh;
     background: linear-gradient(#19316d,#a5548d) fixed;
     display:flex;
+    z-index:2;
 }
 .loading img{
     margin:auto;
-}
-.zoom{
-    position: fixed;
-    width:100vw;
-    height:100vh;
-    background:rgba(0,0,0,0.5);
-    display: none;
-    z-index:2;
-}
-.zoom img{
-    margin:auto;
-    max-height:70%;
-    max-width:100%;
 }
 body{
     background: linear-gradient(#19316d,#a5548d) fixed;
@@ -75,31 +63,24 @@ body{
     font-size:50px;
     border-bottom: 2px solid white;
 }
-.otherThumbnail{
-    margin-bottom: 2vw
-}
-.otherThumbnail img{
-    width:100%;
-    object-fit: contain;
-}
 .toWorks{
     color:rgba(255,255,255,0.2);
     position: fixed;
     height:100vh; 
     width: 100vw;
-    z-index:3;
     pointer-events: none;
 }
 .toWorks p{
     text-align: left;
     position: absolute;
     left:20pt;
-    top:50%;
+    top:30%;
     cursor: pointer;
     background-color:rgba(0,0,0,0.2);
     padding:5pt;
     border-radius: 5%;
     pointer-events: auto;
+    z-index: inherit 3;
 }
 .toWorks p:hover{
     color:white;
