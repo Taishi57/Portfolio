@@ -97,8 +97,8 @@ body{
 .toProject p{
     text-align: right;
     position: absolute;
-    right:20pt;
-    top:30%;
+    right:2%;
+    top:20%;
     cursor: pointer;
     background-color:rgba(0,0,0,0.2);
     padding:5pt;
