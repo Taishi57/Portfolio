@@ -21,16 +21,12 @@ $('#icon-contact').mouseover(function(){
 var projects = [
     {
         name:'Connection with Me and Technology',
-        src:'../../artworks/tomato.jpg',
-        description:'This was drawn with an iPad Pro using digital colored pencil. My though process of this was very simple, I wanted to draw fruits and vegetables realistically, but that is way too cliche, so I decided to crush the fruits. This not only avoids the common fruits drawings, but it adds to the challenge of drawing the juice of the interior. This drawing really tested my observation use of colors to be able to successfully draw the fruit realistically.'},
+        src:'../../images/art240thumbnail.jpg',
+        description:'Here I will document what I have expirenced when I took the course BISIA 240. I had a chance to work on multiple projects, mostly centered around modern technology. This process lead me to a journey to search my connection of myself and digital technology and how it has changed my life. <a href="technology.html">Learn More</a>'},
     {
-        name:'Seattle',
-        src:'../../artworks/seattle.jpg',
-        description:'I wanted to learn how to use Adobe Illustrator, so I asked some friends if they wanted any lock/home screen made by me. One of my friend requested me to make a lockscreen of seattle, which was exactly what I did. My friend was happy with the results of the locksceen, and I was able to learn more on how to use Illustrator, so it was a Win-Win! Before giving the lock screen to my friend, I removed some of the raindrops in the middle so that it will be easier to see the displayed time.'},
-    {   
-        name:'Light in Dark',
-        src:'../../artworks/lightInDark.jpg',
-        description:'The medium of this drawing is charcoal. I wanted to create a piece that has a large contrast, the initial source of this picture is me in the dark with one bright light source spotted towards me. The hood is for the aesthetic feel. It somewhat represents that I am insecure in the dark, and I am drawn towards the light, possibly meaning freedom or confort.'},
+        name:'Pocotoon',
+        src:'../../images/pocotoon.png',
+        description:'Pocotoon is a game with a group of three people for our CSS 111 class assignment. The objective of this game is to claim the most territory in the given time. Pocotoon was built without any game-making software, but with a program called Processing that required us to code the game from scratch <a href="pocotoon.html">Learn More</a>'},
     ];
 for(i = 0; i < projects.length; i++){
     $('.projects').append('<div class="rows"><div class="thumbnail"><img src="'+ projects[i].src +'"></img></div><div class="description"><h1>'+ projects[i].name +'</h1><p>'+ projects[i].description +'</p></div></div>');

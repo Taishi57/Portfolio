@@ -9,6 +9,7 @@ html {
 }
 .loading img{
     margin:auto;
+    margin-top:25vh;
 }
 .zoom{
     position: fixed;

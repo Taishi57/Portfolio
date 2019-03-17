@@ -10,6 +10,7 @@ html {
 }
 .loading img{
     margin:auto;
+    margin-top:25vh;
 }
 body{
     background: linear-gradient(#19316d,#a5548d) fixed;
@@ -46,13 +47,13 @@ body{
     margin-bottom:3vw;
 }
 .thumbnail {
-    flex:2;
+    flex:3;
     width:300px;
 }
 .thumbnail img{
     width:100%;
     object-fit: contain;
-    border-radius:3%;
+    filter: saturate(0.8);
 }
 .description{
     text-align:center;
@@ -60,7 +61,7 @@ body{
     flex:2;
 }
 .description h1{
-    font-size:50px;
+    font-size:40px;
     border-bottom: 2px solid white;
 }
 .toWorks{
@@ -92,7 +93,7 @@ h1{
     font-size:5em;}
 p{
     font-family:sans-serif, Helvetica, sans-serif;
-    font-size:1.5em;
+    font-size:1.3em;
     line-height:35px;
     text-align:left;}
 /* */

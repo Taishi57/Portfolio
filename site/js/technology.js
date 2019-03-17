@@ -1,0 +1,20 @@
+$('#icon-home').mouseover(function(){
+    $(this).attr('src','../../images/home.gif');
+}).mouseleave(function(){
+    $(this).attr('src','../../images/home.png');
+});
+$('#icon-about').mouseover(function(){
+    $(this).attr('src','../../images/about.gif');
+}).mouseleave(function(){
+    $(this).attr('src','../../images/about.png');
+});
+$('#icon-works').mouseover(function(){
+    $(this).attr('src','../../images/works.gif');
+}).mouseleave(function(){
+    $(this).attr('src','../../images/works.png');
+});
+$('#icon-contact').mouseover(function(){
+    $(this).attr('src','../../images/contact.gif');
+}).mouseleave(function(){
+    $(this).attr('src','../../images/contact.png');
+});
