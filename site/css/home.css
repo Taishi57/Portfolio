@@ -33,6 +33,9 @@ body{
 #door{
     margin-left:60px;
 }
+.knock{
+    font-size: 50px;
+}
 /* fonts */
 h1{
     font-family:chickadee;
@@ -93,5 +96,6 @@ p{
     #name{width:100%;}
     #door{margin:0,0,0,0;
         padding-right:20px;
-        width:80%}
+        width:80%;}
+    .knock{font-size:30px;}
   }
