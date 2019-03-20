@@ -5,7 +5,6 @@ html {
     width:100vw;
     height:100vh;
     background: linear-gradient(#19316d,#a5548d) fixed;
-    display:flex;
     z-index:2;
 }
 .loading img{
@@ -41,14 +40,15 @@ body{
     font-family: chickadee; src: url('../../lib/chickadee.ttf'); } 
 .main{
     text-align: center;}
-.rows{
+.projects{
     width:100%;
-    display:flex;
-    margin-bottom:3vw;
+}
+.row{
+    width:100%;
+    margin-bottom:5%;
 }
 .thumbnail {
-    flex:3;
-    width:300px;
+    margin-bottom:5%;
 }
 .thumbnail img{
     width:100%;
@@ -58,7 +58,6 @@ body{
 .description{
     text-align:center;
     padding: 0 2vw;
-    flex:2;
 }
 .description h1{
     font-size:40px;

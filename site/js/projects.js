@@ -1,23 +1,3 @@
-$('#icon-home').mouseover(function(){
-    $(this).attr('src','../../images/home.gif');
-}).mouseleave(function(){
-    $(this).attr('src','../../images/home.png');
-});
-$('#icon-about').mouseover(function(){
-    $(this).attr('src','../../images/about.gif');
-}).mouseleave(function(){
-    $(this).attr('src','../../images/about.png');
-});
-$('#icon-works').mouseover(function(){
-    $(this).attr('src','../../images/works.gif');
-}).mouseleave(function(){
-    $(this).attr('src','../../images/works.png');
-});
-$('#icon-contact').mouseover(function(){
-    $(this).attr('src','../../images/contact.gif');
-}).mouseleave(function(){
-    $(this).attr('src','../../images/contact.png');
-});
 var projects = [
     {
         name:'Connection with Me and Technology',
@@ -29,7 +9,7 @@ var projects = [
         description:'Pocotoon is a game with a group of three people for our CSS 111 class assignment. The objective of this game is to claim the most territory in the given time. Pocotoon was built without any game-making software, but with a program called Processing that required us to code the game from scratch <a href="pocotoon.html">Learn More</a>'},
     ];
 for(i = 0; i < projects.length; i++){
-    $('.projects').append('<div class="rows"><div class="thumbnail"><img src="'+ projects[i].src +'"></img></div><div class="description"><h1>'+ projects[i].name +'</h1><p>'+ projects[i].description +'</p></div></div>');
+    $('.projects').append('<div class="row"><div class="col-md-6 thumbnail"><img src="'+ projects[i].src +'"></img></div><div class="col-md-6 description"><h1>'+ projects[i].name +'</h1><p>'+ projects[i].description +'</p></div></div>');
 }
 //loading screen
 window.addEventListener("load",function(){

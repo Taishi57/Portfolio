@@ -1,23 +1,3 @@
-$('#icon-home').mouseover(function(){
-    $(this).attr('src','../../images/home.gif');
-}).mouseleave(function(){
-    $(this).attr('src','../../images/home.png');
-});
-$('#icon-about').mouseover(function(){
-    $(this).attr('src','../../images/about.gif');
-}).mouseleave(function(){
-    $(this).attr('src','../../images/about.png');
-});
-$('#icon-works').mouseover(function(){
-    $(this).attr('src','../../images/works.gif');
-}).mouseleave(function(){
-    $(this).attr('src','../../images/works.png');
-});
-$('#icon-contact').mouseover(function(){
-    $(this).attr('src','../../images/contact.gif');
-}).mouseleave(function(){
-    $(this).attr('src','../../images/contact.png');
-});
 var artworks = [
     {
         name:'Tomato',
@@ -48,7 +28,7 @@ var order = [0,1,2,4,5]
 for(i = 0; i < order.length; i++){
     $('.artworks').append('<div class="rows"><div class="thumbnail"><img src="'+ artworks[order[i]].src +'"></img></div><div class="description"><h1>'+ artworks[order[i]].name +'</h1><p>'+ artworks[order[i]].description +'</p></div></div>');
 }
-var other = ['battlefield','blueberry','cyborg','forte','lemon','penny','stationary','toast','uw'];
+var other = ['battlefield','blueberry','cyborg','forte','lemon','penny','stationary','toast','uw','desk','leo'];
 for(i=0; i < other.length; i++){
     $('.other').append('<div class="col-3 col-md-2"><div class="otherThumbnail"><img src="../../artworks/other/'+other[i]+'.jpg"></div></div>');
 }

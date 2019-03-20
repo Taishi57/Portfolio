@@ -1,0 +1,59 @@
+html {
+    scroll-behavior: smooth;}
+body{
+    background: linear-gradient(#19316d,#a5548d) fixed;
+    color:#eeeeee;}
+/* Navbars */
+.nav{
+    top: 0;
+    right:0;
+    position:fixed;
+    z-index:3;}
+.navItem img{
+    width:140px;
+    margin:0px 20px;
+    z-index: 3;}
+.nav-item img{
+    width:100px;
+    margin-bottom:-15px}
+.navbar{
+    background:none;
+    visibility: hidden;}
+/*  */
+.space{
+    padding:8vh;
+}
+@font-face { 
+    font-family: chickadee; src: url('../../lib/chickadee.ttf'); } 
+.main{
+    text-align: center;}
+.thumbnail img{
+    width:90%;
+    object-fit: contain;
+    filter: saturate(0.8);
+    float:left;
+    margin:0 5% 5% 0;
+}
+/* fonts */
+h1{
+    font-family:chickadee;
+    font-size:5em;}
+p{
+    font-family:sans-serif, Helvetica, sans-serif;
+    font-size:1.3em;
+    line-height:35px;
+    text-align:left;}
+/* */
+@media only screen and (max-width: 750px) {
+    body{background:#283e7a;}
+    .thumbnail img{margin:0 5% 5% 5%;}
+    p{font-size:15px;
+    line-height:18px}
+    .nav{visibility:hidden;}
+    .navbar{
+        visibility:visible;}
+  }
+
+@media (min-width: 1200px){
+    .container{width:970px;}
+} 
