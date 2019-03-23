@@ -14,7 +14,9 @@ html {
 }
 body{
     background: linear-gradient(#19316d,#a5548d) fixed;
-    color:#eeeeee;}
+    color:#eeeeee;
+    z-index:-1;}
+    
 /* Navbars */
 .nav{
     top: 0;
@@ -38,7 +40,9 @@ body{
 @font-face { 
     font-family: chickadee; src: url('../../lib/chickadee.ttf'); } 
 .main{
-    text-align: center;}
+    text-align: center;
+    position:relative;
+    z-index:-1;}
 .projects{
     width:100%;
 }
@@ -46,7 +50,6 @@ body{
     width:100%;
     padding-bottom:5%;
     margin:0;
-    z-index: -1;
 }
 .thumbnail img{
     width:100%;

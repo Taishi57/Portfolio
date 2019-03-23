@@ -15,5 +15,5 @@ for(i = 0; i < projects.length; i++){
 window.addEventListener("load",function(){
     $('.loading').remove('.loading');
     $('body').css('overflow','visible');
-    $('body').css('position','static');
+    $('body').css('position','relative');
 });
