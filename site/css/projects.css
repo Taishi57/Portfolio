@@ -10,21 +10,21 @@ html {
 .loading img{
     margin:auto;
     margin-top:25vh;
+    z-index:2;
 }
 body{
     background: linear-gradient(#19316d,#a5548d) fixed;
-    position:fixed;
     color:#eeeeee;}
 /* Navbars */
 .nav{
     top: 0;
     right:0;
     position:fixed;
-    z-index:3;}
+    z-index:4;}
 .navItem img{
     width:140px;
     margin:0px 20px;
-    z-index: 3;}
+    z-index: 4;}
 .nav-item img{
     width:100px;
     margin-bottom:-15px}
@@ -46,6 +46,7 @@ body{
     width:100%;
     padding-bottom:5%;
     margin:0;
+    z-index: -1;
 }
 .thumbnail img{
     width:100%;
@@ -77,7 +78,7 @@ body{
     padding:5pt;
     border-radius: 5%;
     pointer-events: auto;
-    z-index: inherit 3;
+    z-index: 3;
 }
 .toWorks p:hover{
     color:white;
