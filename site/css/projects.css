@@ -4,8 +4,8 @@ html {
     position: absolute;
     width:100vw;
     height:100vh;
-    background: linear-gradient(#19316d,#a5548d) fixed;
-    z-index:2;
+    background: linear-gradient(#a5548d, #19316d) fixed;
+    display:flex;
 }
 .loading img{
     margin:auto;
@@ -13,7 +13,6 @@ html {
 }
 body{
     background: linear-gradient(#19316d,#a5548d) fixed;
-    overflow:hidden;
     position:fixed;
     color:#eeeeee;}
 /* Navbars */
@@ -45,10 +44,8 @@ body{
 }
 .row{
     width:100%;
-    margin-bottom:5%;
-}
-.thumbnail {
-    margin-bottom:5%;
+    padding-bottom:5%;
+    margin:0;
 }
 .thumbnail img{
     width:100%;
@@ -57,7 +54,7 @@ body{
 }
 .description{
     text-align:center;
-    padding: 0 2vw;
+    padding:0 4%;
 }
 .description h1{
     font-size:40px;
@@ -100,6 +97,7 @@ p{
     body{background:#283e7a;}
     .loading{background:#283e7a;}
     .loading img{width:40%;}
+    .description{padding:4%}
     .description h1{font-size:30px;}
     p{font-size:15px;
     line-height:18px}
