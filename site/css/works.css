@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;}
-.loading{
+/* .loading{
     position: absolute;
     width:100vw;
     height:100vh;
@@ -10,7 +10,7 @@ html {
 .loading img{
     margin:auto;
     margin-top:25vh;
-}
+} */
 .zoom{
     position: fixed;
     width:100vw;
@@ -26,8 +26,6 @@ html {
 }
 body{
     background: linear-gradient(#a5548d, #19316d) fixed;
-    overflow:hidden;
-    position:fixed;
     color:#eeeeee;}
 /* Navbars */
 .nav{
@@ -66,6 +64,9 @@ body{
     width:100%;
     object-fit: contain;
     border-radius:3%;
+}
+.high{
+    display:none;
 }
 .thumbnail img:hover{
     box-shadow: 0 0 10px white;

@@ -1,22 +1,10 @@
 html {
     scroll-behavior: smooth;}
-.loading{
-    position: absolute;
-    width:100vw;
-    height:100vh;
-    background: linear-gradient(#a5548d, #19316d) fixed;
-    display:flex;
-}
-.loading img{
-    margin:auto;
-    margin-top:25vh;
-    z-index:2;
-}
 body{
     background: linear-gradient(#19316d,#a5548d) fixed;
     color:#eeeeee;
+    position: relative;
     z-index:-1;}
-    
 /* Navbars */
 .nav{
     top: 0;

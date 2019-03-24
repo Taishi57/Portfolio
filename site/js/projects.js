@@ -11,9 +11,3 @@ var projects = [
 for(i = 0; i < projects.length; i++){
     $('.projects').append('<div class="row"><div class="col-md-6 thumbnail"><img src="'+ projects[i].src +'"></img></div><div class="col-md-6 description"><h1>'+ projects[i].name +'</h1><p>'+ projects[i].description +'</p></div></div>');
 }
-//loading screen
-window.addEventListener("load",function(){
-    $('.loading').remove('.loading');
-    $('body').css('overflow','visible');
-    $('body').css('position','relative');
-});
