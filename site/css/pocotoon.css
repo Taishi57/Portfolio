@@ -27,18 +27,23 @@ body{
     font-family: chickadee; src: url('../../lib/chickadee.ttf'); } 
 .main{
     text-align: center;}
-.thumbnail img{
-    width:90%;
-    object-fit: contain;
-    filter: saturate(0.8);
-    float:left;
-    margin:0 5% 5% 0;
-}
-canvas{
+.thumbnail{
+    max-width:500px;
     width:100%;
-    max-width:600px;
-    border:solid black 2px;
+    object-fit: contain;
+    float:center;
 }
+.game{
+    max-width:100%;
+    height:300px;
+    padding:2%;
+    object-fit:contain;
+}
+.poco{
+    width:100%;
+    object-fit:contain;
+}
+
 /* fonts */
 h1{
     font-family:chickadee;
@@ -47,16 +52,15 @@ p{
     font-family:sans-serif, Helvetica, sans-serif;
     font-size:1.3em;
     line-height:35px;
-    text-align:left;}
+    text-align:justify;}
 /* */
 @media only screen and (max-width: 750px) {
     body{background:#283e7a;}
-    .thumbnail img{margin:0 5% 5% 5%;}
     p{font-size:15px;
     line-height:18px}
     .nav{visibility:hidden;}
-    .navbar{
-        visibility:visible;}
+    .navbar{visibility:visible;}
+    .poco{width:70%;}
   }
 
 @media (min-width: 1200px){

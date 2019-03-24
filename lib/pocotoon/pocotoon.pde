@@ -170,7 +170,12 @@ void drawScore() {
         player2Score++;
       }
     }
-    image(endScreen, 0, 0, width, height);
+    try{
+      image(endScreen, 0, 0, width, height);
+    }catch(NullPointerException e){
+      setGradient(color1,color2);
+    }
+    
     //parameters ("message", x, y, size, color, textAlign)
     writeText("Player 1 Score:", 10, 50, 50, color2, LEFT);
     writeText(nf(player1Score/squares.size()*100, 0, 1)+"%", 10, 150, 100, color2, LEFT);
