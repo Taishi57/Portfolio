@@ -3,23 +3,6 @@ html {
 body{
     background: linear-gradient(#19316d,#a5548d) fixed;
     color:#eeeeee;}
-/* Navbars */
-.nav{
-    top: 0;
-    right:0;
-    position:fixed;
-    z-index:3;}
-.navItem img{
-    width:140px;
-    margin:0px 20px;
-    z-index: 3;}
-.nav-item img{
-    width:100px;
-    margin-bottom:-15px}
-.navbar{
-    background:none;
-    visibility: hidden;}
-/*  */
 .space{
     padding:8vh;
 }
