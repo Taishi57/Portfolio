@@ -11,9 +11,6 @@ body{
     object-fit: contain;
     float:center;
 }
-img{
-    border-radius: 5%;
-}
 .poco{
     width:100%;
     object-fit:contain;
