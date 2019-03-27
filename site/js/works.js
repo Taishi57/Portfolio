@@ -34,9 +34,11 @@ var order = [0,1,2,4,5]
 for(i = 0; i < order.length; i++){
     $('.artworks').append('<div class="rows"><div class="thumbnail"><img class="low" src="'+ artworks[order[i]].low +'"></img><img class="high" src="'+ artworks[order[i]].src +'"></img></div><div class="description"><h1>'+ artworks[order[i]].name +'</h1><p>'+ artworks[order[i]].description +'</p></div></div>');
 }
-var other = ['battlefield','blueberry','cyborg','forte','lemon','penny','stationary','toast','uw','desk','leo'];
+var other = [   'battlefield.jpg','blueberry.jpg','cyborg.jpg',
+                'forte.jpg','lemon.jpg','penny.jpg','stationary.jpg',
+                'toast.jpg','uw.jpg','desk.jpg','leo.jpg','musicalBattle.gif'];
 for(i=0; i < other.length; i++){
-    $('.other').append('<div class="col-3 col-md-2"><div class="otherThumbnail"><img src="../../artworks/other/'+other[i]+'.jpg"></div></div>');
+    $('.other').append('<div class="col-3 col-md-2"><div class="otherThumbnail"><img src="../../artworks/other/'+other[i]+'"></div></div>');
 }
 //load
 $('.high').on("load",function(){
