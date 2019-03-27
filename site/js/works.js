@@ -40,12 +40,12 @@ for(i=0; i < other.length; i++){
 }
 //load
 $('.high').on("load",function(){
-    $('.low').css("display","none");
-    $('.high').css("display","initial");
-})
+    $(this).siblings().css("display","none");
+    $(this).css("display","initial");
+});
 
 //zoom
-$('.thumbnail img').click(function(){
+$('.thumbnail .high').click(function(){
     var $imgsrc = $(this).attr('src');
     $('.zoom').css('display','flex');
     $('.zoom img').attr('src',$imgsrc);
@@ -56,5 +56,5 @@ $('.otherThumbnail img').click(function(){
     $('.zoom img').attr('src',$imgsrc);
 });
 $('.zoom').click(function(){
-    $('.zoom').css('display','none');
+    $(this).css('display','none');
 })
