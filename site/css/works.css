@@ -60,6 +60,10 @@ body{
     width:100%;
     object-fit: contain;
 }
+.otherThumbnail img:hover{
+    box-shadow: 0 0 10px white;
+    cursor:pointer;
+}
 .toProject{
     color:rgba(255,255,255,0.2);
     position: fixed;

@@ -21,6 +21,14 @@ body{
 .knock{
     font-size: 50px;
 }
+#envelope img{
+    width:60%;
+    object-fit:contain;
+}
+#comment img{
+    width:60%;
+    object-fit:contain;
+}
 /* fonts */
 h1{
     font-family:chickadee;
