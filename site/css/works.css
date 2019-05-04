@@ -26,67 +26,66 @@ body{
 .rows{
     width:100%;
     display:flex;
-    margin-bottom:3vw;
-}
+    margin-bottom:3vw;}
+.projects.row{
+    width:100%;
+    padding-bottom:5%;
+    margin:0;}
+#nav-tab{
+    position:relative;
+    z-index: 1;}
+.nav-tabs .nav-link{
+    width:50%;
+    color:grey;
+    border: 2px solid transparent;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;}
+.nav-tabs .nav-link.active{
+    color:white;
+    background-color: rgba(0,0,0,0.5);}
+.nav-link:hover{
+    color:white;}
+.title{
+    border-bottom:white 2px solid;}
+.title h1{
+    border:solid white 2px;
+    border-radius:10px 10px 0px 0px;
+    border-bottom:0px;}
 .thumbnail {
     flex:1;
-    width:300px;
-}
+    width:300px;}
 .thumbnail img{
     width:100%;
     object-fit: contain;
-    border-radius:3%;
-}
+    border-radius:3%;}
+.project-thumbnail img{
+    width:100%;
+    object-fit: contain;
+    filter: saturate(0.8);}
 .high{
-    display:none;
-}
+    display:none;}
 .thumbnail img:hover{
     box-shadow: 0 0 10px white;
-    cursor:pointer;
-}
+    cursor:pointer;}
 .description{
     text-align:center;
     padding: 0 2vw;
-    flex:2;
-}
+    flex:2;}
 .description h1{
-    font-size:50px;
-    border-bottom: 2px solid white;
-}
+    font-size:40px;
+    border-bottom: 2px solid white;}
 .otherThumbnail{
-    margin-bottom: 2vw
-}
+    margin-bottom: 2vw}
 .otherThumbnail img{
     width:100%;
-    object-fit: contain;
-}
+    object-fit: contain;}
 .otherThumbnail img:hover{
     box-shadow: 0 0 10px white;
-    cursor:pointer;
-}
-.toProject{
-    color:rgba(255,255,255,0.2);
-    position: fixed;
-    height:100vh; 
-    width: 100vw;
-    z-index: inherit 3;
-    pointer-events: none;
-}
-.toProject p{
-    text-align: right;
-    position: absolute;
-    right:2%;
-    top:20%;
-    cursor: pointer;
-    background-color:rgba(0,0,0,0.2);
-    padding:5pt;
-    border-radius: 5%;
-    pointer-events: auto;
-}
-.toProject p:hover{
-    color:white;
-    background-color:rgba(0,0,0,0.4);
-}
+    cursor:pointer;}
+.learn-more{
+    color:rgb(109, 209, 255);}
+.learn-more:hover{
+    color:white;}
 /* fonts */
 h1{
     font-family:chickadee;
@@ -99,12 +98,11 @@ p{
 /* */
 @media only screen and (max-width: 750px) {
     body{background:#283e7a;}
-    .loading{background:#283e7a;}
-    .loading img{width:40%;}
     .description h1{font-size:30px;}
+    h1{font-size:4em;}
     p{font-size:15px;
     line-height:18px}
-    .nav{visibility:hidden;}
+    .nav-main{visibility:hidden;}
     .navbar{
         visibility:visible;}
   }

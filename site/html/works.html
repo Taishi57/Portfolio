@@ -13,7 +13,7 @@
 
 <body>
     <!-- navgation bar -->
-    <div class="nav">
+    <div class="nav-main">
         <a href="home.html#home" class="navItem"><img id="icon-home" src="../../images/home.png"></a>
         <a href="home.html#about" class="navItem"><img id="icon-about" src="../../images/about.png"></a>
         <a href="works.html#top" class="navItem"><img id="icon-works" src="../../images/works.png"></a>
@@ -38,26 +38,44 @@
         </div>
     </nav>
     <!-- navigation bar -->
-    <a href="projects.html"><div class='toProject'><p>Projects<br>&#62;</p></div></a>
+    <!-- <a href="projects.html"><div class='toProject'><p>Projects<br>&#62;</p></div></a> -->
     <div class="zoom"><img src=""></div>
-    <div class="space" id="top"></div>
+    <div class="space"></div>
     <div class="container main">
-        <h1>Artworks</h1>
-        <p>
-            The most important thing I want people to take away from viewing my portfolio is that
-            I am able to effectively style my webpage so that it is easy to navigate and see the full potential of my
-            artistic skills.
-            To express my creativity, I tried out all sorts of techniques and medium.
-            I believe that art is not only being good at each creation, but experimenting with what I can do.
-            Another reason I try out different things is because it helps me understand more viewpoints.
-            By understanding more perspective, it would be easier to help improve something because I would know what is lacking.
-            By gaining variety of skills, I can be prepared for many things that I would encounter in the future and would
-            increase the chance to be successful.
-        </p><br><br>
-        <div class="artworks"></div>
-        <h1>Other Artworks</h1><br>
-        <div class="other row"></div>
-        <div class="space"></div>
+        <div class="nav nav-tabs show" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-works-tab" data-toggle="tab" href="#nav-works" role="tab" aria-controls="nav-works" aria-selected="true"><h1>Artworks</h1></a>
+            <a class="nav-item nav-link" id="nav-projects-tab" data-toggle="tab" href="#nav-projects" role="tab" aria-controls="nav-projects" aria-selected="false"><h1>Projects</h1></a>
+        </div>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-works" role="tabpanel" aria-labelledby="nav-works-tab">
+                <!-- ARTWORKS -->
+                <br>
+                <p>
+                    The most important thing I want people to take away from viewing my portfolio is that
+                    I am able to effectively style my webpage so that it is easy to navigate and see the full potential of my
+                    artistic skills.
+                    To express my creativity, I tried out all sorts of techniques and medium.
+                    I believe that art is not only being good at each creation, but experimenting with what I can do.
+                    Another reason I try out different things is because it helps me understand more viewpoints.
+                    By understanding more perspective, it would be easier to help improve something because I would know what is lacking.
+                    By gaining variety of skills, I can be prepared for many things that I would encounter in the future and would
+                    increase the chance to be successful.
+                </p><br><br>
+                <div class="artworks"></div>
+                <h1>Other Artworks</h1><br>
+                <div class="other row"></div>
+                <div class="space"></div>
+                <!-- ARTWORKS -->
+            </div>
+            <div class="tab-pane fade" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab">
+                <!-- PROJECTS -->
+                <br id="top">
+                <div class="projects row"></div>
+                <div class="space"></div>
+                <!-- PROJECTS -->
+            </div>
+        </div>
+        
     </div>  
 
 </body>

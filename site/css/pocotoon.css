@@ -43,8 +43,6 @@ a:hover{
     line-height:18px;
     padding:0 3%;}
     a{font-size:15px;}
-    .nav{visibility:hidden;}
-    .navbar{visibility:visible;}
     .poco{width:90%;}
   }
 @media (min-width: 1200px){

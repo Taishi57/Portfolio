@@ -34,12 +34,27 @@ var order = [0,1,2,4,5]
 for(i = 0; i < order.length; i++){
     $('.artworks').append('<div class="rows"><div class="thumbnail"><img class="low" src="'+ artworks[order[i]].low +'"></img><img class="high" src="'+ artworks[order[i]].src +'"></img></div><div class="description"><h1>'+ artworks[order[i]].name +'</h1><p>'+ artworks[order[i]].description +'</p></div></div>');
 }
-var other = [   'battlefield.jpg','blueberry.jpg','cyborg.jpg',
-                'forte.jpg','lemon.jpg','penny.jpg','stationary.jpg',
-                'toast.jpg','uw.jpg','desk.jpg','leo.jpg','musicalBattle.gif'];
+var other = [   'blueberry.jpg','cyborg.jpg','forte.jpg','lemon.jpg','penny.jpg','stationary.jpg',
+                'toast.jpg','battlefield.jpg','uw.jpg','desk.jpg','leo.jpg','musicalBattle.gif'];
 for(i=0; i < other.length; i++){
     $('.other').append('<div class="col-3 col-md-2"><div class="otherThumbnail"><img src="../../artworks/other/'+other[i]+'"></div></div>');
 }
+
+
+var projects = [
+    {
+        name:'Connection with Me and Technology',
+        src:'../../images/art240thumbnail.jpg',
+        description:'Here I will document what I have expirenced when I took the course BISIA 240. I had a chance to work on multiple projects, mostly centered around modern technology. This process lead me to a journey to search my connection of myself and digital technology and how it has changed my life. <a class="learn-more" href="technology.html">Learn More</a>'},
+    {
+        name:'Pocotoon',
+        src:'../../images/pocotoon.png',
+        description:'Pocotoon is a game created with a group of three people for our CSS 111 class assignment. The objective of this game is to claim the most territory in the given time. Pocotoon was built without any game-making software, but with a program called Processing that required us to code the game from scratch <a class="learn-more" href="pocotoon.html">Learn More</a>'},
+    ];
+for(i = 0; i < projects.length; i++){
+    $('.projects').append('<div class="row"><div class="col-md-6 project-thumbnail"><img src="'+ projects[i].src +'"></img></div><div class="col-md-6 description"><h1>'+ projects[i].name +'</h1><p>'+ projects[i].description +'</p></div></div></br>');
+}
+
 //load
 $('.high').on("load",function(){
     $(this).siblings().css("display","none");

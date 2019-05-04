@@ -1,4 +1,4 @@
-.nav{
+.nav-main{
     top: 0;
     right:0;
     position:fixed;
@@ -13,3 +13,8 @@
 .navbar{
     background:none;
     visibility: hidden;}
+@media only screen and (max-width: 750px) {
+    .nav-main{visibility:hidden;}
+    .navbar{
+        visibility:visible;}
+}
