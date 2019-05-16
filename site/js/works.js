@@ -28,7 +28,7 @@ var artworks = [
         name:'Totally Realistic Soccer',
         src:'../../artworks/soccer.gif',
         low:'../../artworks/low/soccerLow.png',
-        description:'This gif animation was created with an app called <i>Folioscope</i> which lets to drawn flipnote animation on your smartphone/tablet. They are all drawn frame by frame, unlike latest animating programs that automatically generates the movement for you. This animation\'s theme is soccer, I tried to make a humorous scene of characters doing ridiculous "soccer".'}
+        description:'This gif animation was created with an app called <i>Folioscope</i> which lets to drawn flipnote animation on your smartphone/tablet. They are all drawn frame by frame, unlike latest animating programs that automatically generates the movement for you. This animation\'s theme is soccer, I tried to make a humorous scene of characters doing ridiculous "soccer". You can see more of my GIF animations <a class="learn-more" href="https://folioscope.co/taishi1999">here</a>'}
 ];
 var order = [0,1,2,4,5]
 for(i = 0; i < order.length; i++){
