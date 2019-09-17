@@ -74,4 +74,14 @@ $('.otherThumbnail img').click(function(){
 });
 $('.zoom').click(function(){
     $(this).css('display','none');
-})
+});
+$('.navbar').on('hide.bs.collapse', function () {
+    $('nav').css('background','');
+  });
+$('.navbar').on('show.bs.collapse', function () {
+    $('nav').css('background','rgba(0, 0, 0, 50%)');
+});
+
+$(document).click(function () {
+    $('.navbar-collapse').collapse('hide');
+});
