@@ -99,7 +99,7 @@ p{
 @media only screen and (max-width: 750px) {
     body{background:#283e7a;}
     .description h1{font-size:30px;}
-    h1{font-size:3em;}
+    h1{font-size:2em;}
     p{font-size:15px;
     line-height:18px}
     .nav-main{visibility:hidden;}
