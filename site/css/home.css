@@ -2,90 +2,51 @@ html {
     scroll-behavior: smooth;}
 body{
     background: linear-gradient(#3c857b, #19316d) fixed;
-    color:#eeeeee;}
+    color:#eeeeee;
+    text-align: center;}
+.container{
+    margin:auto;}
 .space{
-    padding:8vh;
+    height:20vh;
 }
 #name{
-    width:70%;
-    display: block;
+    height:70vh;
+    object-fit:contain;
     margin:auto;}
 @font-face { 
     font-family: chickadee; src: url('../../lib/chickadee.ttf'); } 
-.main{
-    text-align: center;
-}
 #door{
     margin-left:60px;
+    height:55vh;
+    object-fit: contain;
 }
-.knock{
-    font-size: 50px;
-}
-#envelope img{
-    width:60%;
-    object-fit:contain;
-}
-#comment img{
-    width:60%;
-    object-fit:contain;
-}
+.contact-icon{
+    margin:auto;}
+.contact-icon img{
+    max-width:100%;
+    max-height:40vh;
+    object-fit:contain;}
 /* fonts */
+h1, h2, h3, h4, h5, h6{
+    font-family:chickadee;}
 h1{
-    font-family:chickadee;
-    font-size:5em;}
+    font-size:80px;}
+h2{
+    font-size:50px;}
 p{
     font-family:sans-serif;
     font-size:1.6em;
     text-align:justify;}
 /* */
-/* forms */
-.form-control{
-    color:white;
-    width:100%;
-    background:transparent;
-    border:none;
-    border-radius: 0;
-    outline:none;
-    border-bottom:2px solid white;
-    font-size:22px;
-    font-family:sans-serif;
-}
-.row .form-control:focus {
-    background:none;
-    box-shadow: none;
-    color:white;}
-
-.form-control::-webkit-input-placeholder{
-    color:#cccccc;
-    font-style: italic;
-    opacity: 1;
-}
-#submit{
-    background: url("../../images/send.png") no-repeat;
-    background-size:100%;
-    border-color:transparent;
-    width:100%;
-    margin:auto;
-    max-width:700px;
-    height:0;
-    padding-top:9%;
-    margin-top:20px;
-}
-#submit:hover{
-    cursor:pointer;}
-#sent{
-    height:80px;}
-#sent h1{
-    visibility:hidden;}
-/*  */
 @media only screen and (max-width: 750px) {
     body{background:#283e7a;}
     h1{font-size:50px;}
+    h2{font-size:30}
     p{font-size:15px;
         line-height:18px}
     #name{width:100%;}
     #door{margin:0,0,0,0;
         padding-right:20px;
-        width:80%;}
-    .knock{font-size:30px;}
+        width:80%;
+        src:"../../images/doorOpen2.gif"}
   }

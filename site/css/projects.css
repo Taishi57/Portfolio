@@ -6,27 +6,28 @@ body{
 .main{
     text-align: center;}
 .thumbnail{
-    max-width:500px;
-    width:100%;
-    object-fit: contain;
+    margin-top:0px;
+    max-width:600px;
     float:center;
 }
-.tech{
+img{
+    margin-top:20px;
     width:100%;
     object-fit:contain;
 }
-/* fonts */
-h1{
-    font-family:chickadee;
-    font-size:5em;}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:chickadee;}
+h1{font-size:80px;}
+h2{font-size:50px;
+    text-align:left;
+    margin-top:20px;}
 p{
+    margin-top:20px;
     font-family:sans-serif, Helvetica, sans-serif;
     font-size:1.3em;
     line-height:35px;
     text-align:justify;}
-.space{
-    padding:8vh;
-}
 a{
     font-size:20px;
     color:rgb(109, 209, 255);
@@ -34,17 +35,19 @@ a{
 a:hover{
     color:white;
 }
+.space{
+    padding:8vh;
+}
 @font-face { 
     font-family: chickadee; src: url('../../lib/chickadee.ttf');} 
 
 @media only screen and (max-width: 750px) {
     body{background:#283e7a;}
-    h1{font-size:3em;}
-    p{font-size:15px;
-    line-height:18px;
-    padding:0 3%;}
-    a{font-size:15px;}
-    .poco{width:90%;}
+    h1{font-size:60px;}
+    h2{font-size:40px;}
+    p{font-size:16px;
+    line-height:20px;}
+    a{font-size:16px;}
   }
 @media (min-width: 1200px){
     .container{width:960px;}

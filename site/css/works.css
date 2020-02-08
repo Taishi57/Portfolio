@@ -1,5 +1,9 @@
 html {
     scroll-behavior: smooth;}
+body{
+    background: linear-gradient(#a5548d, #19316d) fixed;
+    color:#eeeeee;
+    text-align:center;}
 .zoom{
     position: fixed;
     width:100vw;
@@ -13,24 +17,12 @@ html {
     max-height:70%;
     max-width:100%;
 }
-body{
-    background: linear-gradient(#a5548d, #19316d) fixed;
-    color:#eeeeee;}
 .space{
     padding:8vh;
 }
 @font-face { 
     font-family: chickadee; src: url('../../lib/chickadee.ttf'); } 
-.main{
-    text-align: center;}
-.rows{
-    width:100%;
-    display:flex;
-    margin-bottom:3vw;}
-.projects.row{
-    width:100%;
-    padding-bottom:5%;
-    margin:0;}
+/* Artworks & Projects tab */
 #nav-tab{
     position:relative;
     z-index: 1;}
@@ -46,63 +38,70 @@ body{
 .nav-link:hover{
     color:white;}
 .title{
-    border-bottom:white 2px solid;}
-.title h1{
-    border:solid white 2px;
-    border-radius:10px 10px 0px 0px;
-    border-bottom:0px;}
-.thumbnail {
-    flex:1;
-    width:300px;}
-.thumbnail img{
+    margin-top:30px;
+    text-align:left}
+.artwork{
+    width:100%;}
+.artwork img{
+    margin-top:10px;
     width:100%;
     object-fit: contain;
     border-radius:3%;}
-.project-thumbnail img{
+.artwork img:hover{
+    box-shadow: 0 0 10px white;
+    cursor:pointer;}
+.thumbnail img{
+    margin-top:10px;
     width:100%;
     object-fit: contain;
     filter: saturate(0.8);}
 .high{
     display:none;}
-.thumbnail img:hover{
-    box-shadow: 0 0 10px white;
-    cursor:pointer;}
+
 .description{
     text-align:center;
-    padding: 0 2vw;
-    flex:2;}
-.description h1{
-    font-size:40px;
-    border-bottom: 2px solid white;}
-.otherThumbnail{
-    margin-bottom: 2vw}
-.otherThumbnail img{
+    /* padding: 0 2vw; */}
+.other{
+    margin:auto;
+}
+.otherArt{
+    margin-bottom:20px}
+.otherArt img{
     width:100%;
     object-fit: contain;}
-.otherThumbnail img:hover{
+.otherArt img:hover{
     box-shadow: 0 0 10px white;
     cursor:pointer;}
-.learn-more{
-    color:rgb(109, 209, 255);}
-.learn-more:hover{
-    color:white;}
 /* fonts */
+h1,h2,h3,h4,h5,h6{
+    font-family:chickadee;}
 h1{
-    font-family:chickadee;
-    font-size:5em;}
+    font-size:70px;}
+h2{
+    font-size:60px;
+    line-height: 0.5;
+}
 p{
+    margin-top:10px;
     font-family:sans-serif, Helvetica, sans-serif;
-    font-size:1.5em;
+    font-size:25px;
     line-height:35px;
-    text-align:left;}
+    text-align:justify;}
+a{
+    font-size:25px;
+    color:rgb(109, 209, 255);}
+a:hover{
+    color:white;}
 /* */
 @media only screen and (max-width: 750px) {
     body{background:#283e7a;}
     .description h1{font-size:30px;}
-    h1{font-size:2em;}
-    p{font-size:15px;
-    line-height:18px}
+    h1{font-size:40px;}
+    h2{font-size:40px;
+        line-height: 1;}
+    p{font-size:17px;
+        line-height:20px;}
+    a{font-size:16px;}
     .nav-main{visibility:hidden;}
-    .navbar{
-        visibility:visible;}
+    .navbar{visibility:visible;}
   }

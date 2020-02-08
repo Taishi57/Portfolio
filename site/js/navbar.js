@@ -1,3 +1,4 @@
+//Hover actions for the navigation bar
 $('#icon-home').mouseover(function(){
     $(this).attr('src','../../images/home.gif');
 }).mouseleave(function(){

@@ -30,29 +30,33 @@ var artworks = [
         low:'../../artworks/low/soccerLow.png',
         description:'This gif animation was created with an app called <i>Folioscope</i> which lets to drawn flipnote animation on your smartphone/tablet. They are all drawn frame by frame, unlike latest animating programs that automatically generates the movement for you. This animation\'s theme is soccer, I tried to make a humorous scene of characters doing ridiculous "soccer". You can see more of my GIF animations <a class="learn-more" href="https://folioscope.co/taishi1999">here</a>'}
 ];
-var order = [0,1,2,4,5]
+var order = [0,1,2,4,5] //order of the featured artworks
 for(i = 0; i < order.length; i++){
-    $('.artworks').append('<div class="rows"><div class="thumbnail"><img class="low" src="'+ artworks[order[i]].low +'"></img><img class="high" src="'+ artworks[order[i]].src +'"></img></div><div class="description"><h1>'+ artworks[order[i]].name +'</h1><p>'+ artworks[order[i]].description +'</p></div></div>');
+    $('.artlist').append('<div class="row"><div class="col-12 title"><h2>'+artworks[order[i]].name+'</h2></div></div> <div class="row"><div class="col-md-6 col-lg-4 artwork"><img class="low" src="'+ artworks[order[i]].low +'"></img><img class="high" src="'+ artworks[order[i]].src +'"></img></div><div class="col-md-6 col-lg-8 description"><p>'+ artworks[order[i]].description +'</p></div></div>');
 }
 var other = [   'blueberry.jpg','cyborg.jpg','forte.jpg','lemon.jpg','penny.jpg','stationary.jpg',
                 'toast.jpg','battlefield.jpg','uw.jpg','desk.jpg','leo.jpg','musicalBattle.gif'];
 for(i=0; i < other.length; i++){
-    $('.other').append('<div class="col-3 col-md-2"><div class="otherThumbnail"><img src="../../artworks/other/'+other[i]+'"></div></div>');
+    $('.other').append('<div class="col-6 col-md-3 otherArt"><img src="../../artworks/other/'+other[i]+'"></div>');
 }
 
 
 var projects = [
     {
         name:'Connection with Me and Technology',
-        src:'../../images/art240thumbnail.jpg',
-        description:'Here I will document what I have expirenced when I took the course BISIA 240. I had a chance to work on multiple projects, mostly centered around modern technology. This process lead me to a journey to search my connection of myself and digital technology and how it has changed my life. <a class="learn-more" href="technology.html">Learn More</a>'},
+        thumbnail:'../../images/tech-thumbnail.jpg',
+        description:'Here I will document what I have expirenced when I took the course BISIA 240. I had a chance to work on multiple projects, mostly centered around modern technology. This process lead me to a journey to search my connection of myself and digital technology and how it has changed my life. <br><a class="learn-more" href="technology.html">Learn More</a>'},
     {
         name:'Pocotoon',
-        src:'../../images/pocotoon.png',
-        description:'Pocotoon is a game created with a group of three people for our CSS 111 class assignment. The objective of this game is to claim the most territory in the given time. Pocotoon was built without any game-making software, but with a program called Processing that required us to code the game from scratch <a class="learn-more" href="pocotoon.html">Learn More</a>'},
+        thumbnail:'../../images/pocotoon.png',
+        description:'Pocotoon is a game created with a group of three people for our CSS 101 class assignment. The objective of this game is to claim the most territory in the given time. Pocotoon was built without any game-making software, but with a program called Processing that required us to code the game from scratch <br><a class="learn-more" href="pocotoon.html">Learn More</a>'},
+    {
+        name:'Echo Thoughts',
+        thumbnail:'../../images/echo-thumbnail.png',
+        description:'Echo Though is an app that provides resources such as reminder daily task, cognitive games, and studying tools/tips for college students who are struggling with their academic task. This is the first project created in my major IMD and we created this app as a goal to help young people who has trouble remembering things.<br><a class="learn-more" href="echo.html">Learn More</a>'}
     ];
 for(i = 0; i < projects.length; i++){
-    $('.projects').append('<div class="row"><div class="col-md-6 project-thumbnail"><img src="'+ projects[i].src +'"></img></div><div class="col-md-6 description"><h1>'+ projects[i].name +'</h1><p>'+ projects[i].description +'</p></div></div></br>');
+    $('.projects').append('<div class="row"><div class="col-12 title"><h2>'+ projects[i].name +'</h2></div></div> <div class="row"><div class="col-md-6 thumbnail"><img src="'+ projects[i].thumbnail +'"></img></div><div class="col-md-6 description"><p>'+ projects[i].description +'</p></div></div>');
 }
 
 //load
@@ -62,12 +66,12 @@ $('.high').on("load",function(){
 });
 
 //zoom
-$('.thumbnail .high').click(function(){
+$('.high').click(function(){
     var $imgsrc = $(this).attr('src');
     $('.zoom').css('display','flex');
     $('.zoom img').attr('src',$imgsrc);
 });
-$('.otherThumbnail img').click(function(){
+$('.otherArt img').click(function(){
     var $imgsrc = $(this).attr('src');
     $('.zoom').css('display','flex');
     $('.zoom img').attr('src',$imgsrc);
