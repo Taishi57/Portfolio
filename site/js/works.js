@@ -45,18 +45,21 @@ var projects = [
     {
         name:'Echo Thoughts',
         thumbnail:'../../images/echo-thumbnail.png',
-        description:'Echo Though is an app that provides resources such as reminder daily task, cognitive games, and studying tools/tips for college students who are struggling with their academic task. This is the first project created in my major IMD and we created this app as a goal to help young people who has trouble remembering things.<br><a class="learn-more" href="echo.html">Learn More</a>'},
+        description:'Echo Though is an app that provides resources such as reminder daily task, cognitive games, and studying tools/tips for college students who are struggling with their academic task. This is the first project created in my major IMD and we created this app as a goal to help young people who has trouble remembering things.',
+        link:'echo.html',},
     {
         name:'Pocotoon',
         thumbnail:'../../images/pocotoon.png',
-        description:'Pocotoon is a game created with a group of three people for our CSS 101 class assignment. The objective of this game is to claim the most territory in the given time. Pocotoon was built without any game-making software, but with a program called Processing that required us to code the game from scratch <br><a class="learn-more" href="pocotoon.html">Learn More</a>'},
+        description:'Pocotoon is a game created with a group of three people for our CSS 101 class assignment. The objective of this game is to claim the most territory in the given time. Pocotoon was built without any game-making software, but with a program called Processing that required us to code the game from scratch.',
+        link:'pocotoon.html',},
     {
         name:'Connection with Me and Technology',
         thumbnail:'../../images/tech-thumbnail.jpg',
-        description:'Here I will document what I have expirenced when I took the course BISIA 240. I had a chance to work on multiple projects, mostly centered around modern technology. This process lead me to a journey to search my connection of myself and digital technology and how it has changed my life. <br><a class="learn-more" href="technology.html">Learn More</a>'},
+        description:'Here I will document what I have expirenced when I took the course BISIA 240. I had a chance to work on multiple projects, mostly centered around modern technology. This process lead me to a journey to search my connection of myself and digital technology and how it has changed my life.',
+        link:'technology.html',},
     ];
 for(i = 0; i < projects.length; i++){
-    $('.projects').append('<div class="row"><div class="col-12 title"><h2>'+ projects[i].name +'</h2></div></div> <div class="row"><div class="col-md-6 thumbnail"><img src="'+ projects[i].thumbnail +'"></img></div><div class="col-md-6 description"><p>'+ projects[i].description +'</p></div></div>');
+    $('.projects').append('<div class="row"><div class="col-12 title"><h2>'+ projects[i].name +'</h2></div></div> <div class="row"><div class="col-md-6 thumbnail"><a href="'+projects[i].link+'"><img src="'+ projects[i].thumbnail +'"></img></a></div><div class="col-md-6 description"><p>'+ projects[i].description +'</p></div></div>');
 }
 
 //load
@@ -89,3 +92,26 @@ $('.navbar').on('show.bs.collapse', function () {
 $(document).click(function () {
     $('.navbar-collapse').collapse('hide');
 });
+
+var a = 5;
+if (a < 10) {
+    let b = a + 5;
+} 
+alert(b);
+
+var a = 5;
+if (a < 10) {
+    let b = a + 5;
+}
+alert(b);
+
+var a = 5;
+if (a < 10) {
+    let b = a + 5;
+}
+alert(b);
+var a = 5;
+if (a < 10) {
+    let b = a + 5;
+}
+alert(b);
