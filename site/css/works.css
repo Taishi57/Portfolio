@@ -1,91 +1,101 @@
-
-body{
-    background: linear-gradient(#a5548d, #19316d) fixed;
-    color:#eeeeee;
-    text-align:center;}
-.zoom{
-    position: fixed;
-    width:100vw;
-    height:100vh;
-    background:rgba(0,0,0,0.5);
-    display: none;
-    z-index:2;
+@font-face { 
+  font-family: lulo; src: url('../../lib/Lulo-Clean-W01-One-Bold.ttf');
 }
-.zoom img{
-    margin:auto;
-    max-height:70%;
-    max-width:100%;
+html {
+  scroll-behavior: smooth;} 
+body{
+  background: linear-gradient(#a5548d, #19316d) fixed;
+  color:#eeeeee;
+  text-align:center;
+  margin:0;
 }
 .space{
-    padding:8vh;
+  padding:12vh;
 }
-@font-face { 
-    font-family: chickadee; src: url('../../lib/chickadee.ttf'); } 
-.title{
-    margin-top:30px;
-    text-align:left}
-.artwork{
-    width:100%;}
-.artwork img{
-    margin-top:10px;
-    width:100%;
-    object-fit: contain;
-    border-radius:3%;}
-.artwork img:hover{
-    box-shadow: 0 0 10px white;
-    cursor:pointer;}
-.thumbnail img{
-    margin-top:10px;
-    width:100%;
-    object-fit: contain;
-    filter: saturate(0.8);}
-.high{
-    display:none;}
-
-.description{
-    text-align:center;
-    /* padding: 0 2vw; */}
-.other{
-    margin:auto;
-}
-.otherArt{
-    margin-bottom:20px}
-.otherArt img{
-    width:100%;
-    object-fit: contain;}
-.otherArt img:hover{
-    box-shadow: 0 0 10px white;
-    cursor:pointer;}
-/* fonts */
-h1,h2,h3,h4,h5,h6{
-    font-family:chickadee;}
-h1{
-    font-size:70px;}
-h2{
-    font-size:60px;
-    line-height: 0.5;
+.header{
+  font-family: lulo, sans-serif;
+  font-size:3em;
+  letter-spacing:-0.1em;
+  padding-bottom:1em;
 }
 p{
-    margin-top:10px;
-    font-family:sans-serif, Helvetica, sans-serif;
-    font-size:25px;
-    line-height:35px;
-    text-align:justify;}
+  color:white;
+}
+.navigator{
+  max-width:1500px;
+  display:flex;
+  margin:2em auto;
+}
+.navigator .navigator-option{
+  flex:1;
+}
 a{
-    font-size:25px;
-    color:rgb(109, 209, 255);}
+  font-family: lulo, sans-serif;
+  font-size:20px;
+  color:white;
+  letter-spacing:-2.5px;
+}
 a:hover{
-    color:white;}
-/* */
-@media only screen and (max-width: 750px) {
-    body{background:#283e7a;}
-    .description h1{font-size:30px;}
-    h1{font-size:40px;}
-    h2{font-size:40px;
-        line-height: 1;}
-    p{font-size:17px;
-        line-height:20px;}
-    a{font-size:16px;}
-    .nav-main{visibility:hidden;}
-    .navbar{visibility:visible;}
+  color:rgb(109, 209, 255);
+  text-decoration: none;
+}
+/* Masonry grid */
+.masonry {
+  column-gap: 20px;
+  column-fill: initial;
+}
+
+/* Masonry item */
+.masonry .brick {
+  margin-bottom: 30px;
+  display: inline-block; /* Fix the misalignment of items */
+  vertical-align: top; /* Keep the item on the very top */
+}
+.masonry .brick img{
+  border-radius: 8px;
+}
+.masonry .brick img:hover{
+  filter:brightness(80%);
+  cursor:zoom-in;
+}
+.zoom{
+  position: fixed;
+  width:100vw;
+  height:100vh;
+  background:rgba(0,0,0,0.5);
+  display: none;
+  z-index:15;
+  cursor:zoom-out;
+  right:0;
+  top:0;
+}
+.zoom img{
+  margin:auto;
+  max-height:90%;
+  max-width:100%;
+}
+#back-to-top{
+  background:rgb(15, 35, 80);
+  width:100%;
+  padding:5vh;
+  margin:0;
+}
+
+/* Masonry on tablets */
+@media only screen and (max-width: 768px) {
+  .masonry {
+    column-count: 2;
   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .masonry {
+    column-count: 4;
+  }
+}
+
+/* Masonry on big screens */
+@media only screen and (min-width: 1023px) {
+  .masonry {
+    column-count: 4;
+  }
+}

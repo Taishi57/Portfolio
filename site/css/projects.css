@@ -16,27 +16,48 @@ img{
     object-fit:contain;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family:chickadee;}
-h1{font-size:80px;}
+.header{
+    font-size:3em;
+    letter-spacing:-0.1em;
+    padding-bottom:1em;
+}
+@font-face { 
+    font-family: lulo; src: url('../../lib/Lulo-Clean-W01-One-Bold.ttf'); 
+} 
+h1,h2,h3,h4,h5,h6,a{
+    font-family:lulo,sans-serif;}
 h2{font-size:50px;
     text-align:left;
     margin-top:20px;}
 p{
     margin-top:20px;
     font-family:sans-serif, Helvetica, sans-serif;
-    font-size:1.3em;
+    font-size:1.1em;
     line-height:35px;
     text-align:justify;}
-a{
-    font-size:20px;
+p a{
+    font-family: sans-serif, Helvetica, sans-serif;
+    font-size:1em;
+    letter-spacing: 0;
     color:rgb(109, 209, 255);
 }
-a:hover{
+a{
+    font-size:20px;
     color:white;
+    letter-spacing:-2.5px;
+}
+a:hover{
+    color:rgb(109, 209, 255);
+    text-decoration: none;
 }
 .space{
-    padding:8vh;
+    padding:12vh;
+}
+#back-to-top{
+    background:rgb(15, 35, 80);
+    width:100%;
+    padding:5vh;
+    text-align: center;
 }
 @font-face { 
     font-family: chickadee; src: url('../../lib/chickadee.ttf');} 

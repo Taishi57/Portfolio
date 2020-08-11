@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'> -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
     <link rel='stylesheet' href='../../lib/bootstrap-4.1.3.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/navbar.css?rnd=3">
@@ -13,52 +13,70 @@
 </head>
 
 <body>
+    <div id="background"></div>
     <!-- navgation bar -->
-    <div class="nav-main">
-        <a href="#home" class="navItem"><img id="icon-home" src="../../images/home.png"></a>
-        <a href="#about" class="navItem"><img id="icon-about" src="../../images/about.png"></a>
-        <a href="#works" class="navItem"><img id="icon-works" src="../../images/works.png"></a>
-        <a href="#contact" class="navItem"><img id="icon-contact" src="../../images/contact.png"></a>
+    <div class="nav-name">
+        <h1>Taishi Hayakawa</h1>
     </div>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a class="nav-link" href="#home"><img src="../../images/home.png"><span class="sr-only">(current)</span></a></li>
-                <li class="nav-item active"><a class="nav-link" href="#about"><img src="../../images/about.png"><span class="sr-only">(current)</span></a></li>
-                <li class="nav-item active"><a class="nav-link" href="#works"><img src="../../images/works.png"><span class="sr-only">(current)</span></a></li>
-                <li class="nav-item active"><a class="nav-link" href="#contact"><img src="../../images/contact.png"><span class="sr-only">(current)</span></a></li>
-            </ul>
+    <a href="#" class="nav-menu hide-desktop">
+        <img src="../../images/ham.svg" alt="toggle menu" id="menu">
+    </a>
+    <div class="nav show-desktop hide-mobile" id="nav">
+        <div id="exit" class="exit-btn hide-desktop"><img src="../../images/exit.svg" alt="exit menu"></div>
+        <div class="navItem" id="nav-home">
+            <img src="../../images/Asset1.svg" alt="">
+            <a href="#home"><h1 >HOME</h1></a>
         </div>
-    </nav>
+        <div class="navItem" id="nav-works">
+            <img src="../../images/Asset2.svg" alt="">
+            <a href="#works"><h1 >WORKS</h1></a>
+        </div>
+        <div class="navItem" id="nav-about">
+            <img src="../../images/Asset3.svg" alt="">
+            <a href="#about"><h1 >ABOUT</h1></a>
+        </div>
+        <div class="navItem" id="nav-contact">
+            <img src="../../images/Asset4.svg" alt="">
+            <a href="#contact"><h1 >CONTACT</h1></a>
+        </div>
+    </div>
     <!-- navigation bar -->
-    <!-- home -->
     <div class="container">
-        <div class="space" id="home"></div>
-        <img id="name" src="../../images/taishi2.gif">
-
-        <!-- ABOUT -->
-        <div class="space" id="about"></div>
-        <h1>About Me</h1>
-        <br>
-        <p>I am a <span>2D Designer</span> and <span>Visual Artist</span> aiming to create inspiring pieces.<br>
-            My goal is to create <span>User-friendly</span> designs for all people to have the <span>Most Pleasant Experience Possible.</span><br>
-            My strength is that I can <span>Adapt</span> to a variety of mediums, not just specialize in one art style. <br>
-            I like to try out many things to <span>Discover</span> my strengths and weaknesses so that I can understand more about myself. <br>
-            I <span>Enjoy</span> looking at my results, whether the art turned out well or not, and continue to <span>Grow</span> from these experiences.</p>
-        
-        <div class="space"></div>
+        <!-- home -->
+            <div id="home">
+                <img src="../../images/taishi2.gif">
+            </div>
         <!-- WORKS -->
-        <div class="space" id="works"></div>
-        <h1>Projects</h1>
-        <div class="projects"></div>
-
-        <!-- ARTWORKS -->
-        <!-- <h1>Projects</h1>
-        <p>
+            <h1 class="header" id="works">Works/Projects</h1>
+            <div class="projects"></div>
+        <!-- ABOUT -->
+        <div id="about">
+            <h1 class="header">About Me</h1>
+            <div>
+                <p>I am a <span>2D Designer</span> and <span>Visual Artist</span> aiming to create inspiring pieces.<br>
+                    My goal is to create <span>User-friendly</span> designs for all people to have the <span>Most Pleasant Experience Possible.</span><br>
+                    My strength is that I can <span>Adapt</span> to a variety of mediums, not just specialize in one art style. <br>
+                    I like to try out many things to <span>Discover</span> my strengths and weaknesses so that I can understand more about myself. <br>
+                    I <span>Enjoy</span> looking at my results, whether the art turned out well or not, and continue to <span>Grow</span> from these experiences.
+                </p>        
+            </div>
+        </div>
+        <!-- CONTACT -->
+            <div id="contact">
+                <h1 class="header">Contact</h1>
+                <div>
+                    <a href="mailto:hayakt@uw.edu?subject=Message from Portfolio Website"><div id="envelope">
+                        <img src="../../images/envelope-close.png">
+                        <h2>Send me an Email</h2>
+                    </div></a>
+                    <a href="https://TaishiH.sarahah.com"><div id="comment">
+                        <img src="../../images/comment-close.png">
+                        <h2>Annonymous Message</h2>
+                    </div></a>
+                </div>
+            </div>
+        
+        <!-- <p>
             The most important thing I want people to take away from viewing my portfolio is that
             I am able to effectively style my webpage so that it is easy to navigate and see the full potential of my
             artistic skills.
@@ -68,32 +86,26 @@
             By understanding more perspective, it would be easier to help improve something because I would know what is lacking.
             By gaining variety of skills, I can be prepared for many things that I would encounter in the future and would
             increase the chance to be successful.
-        </p><br><br>
-        <div class="artlist"></div>
-        <div class="space"></div>
-        <h2>Other Artworks</h2><br>
-        <div class="other row"></div> -->
-        <!-- ARTWORKS -->
+        </p> -->
 
-        
-        <!-- <h2>Knock On the Door!</h2> -->
-        <!-- <a href="works.html"><img id="door" src="../../images/doorClose2.png"></a> -->
-        <div class="space" id="contact"></div>
-        <h1>Feedback/Questions</h1>
+        <!-- <div class="space" id="contact"></div>
+        <h1 class="header">Feedback/Questions</h1>
         <div class="row">
             <div class="col-5 contact-icon" id="envelope"><a href="mailto:hayakt@uw.edu?subject=Message from Portfolio Website"><img src="../../images/envelope-close.png"></a><h2>Send Email</h2></div>
             <div class="col-5 contact-icon" id="comment"><a href="https://TaishiH.sarahah.com" target="_blank"><img src="../../images/comment-close.png"></a><h2>Annonymous Message</h2></div>
-        </div>
-        <div class="space"></div>
-            <a href="#home">Back to Top</a>
-        <div class="space"></div>
+        </div> -->
+        
     </div>
+    <div id="back-to-top">
+        <a href="#home" >Back to Top</a>
+    </div>
+    
     
 
 </body>
 <!-- bootstrap and jquery -->
-<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script> -->
-<!-- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="../../lib/jquery-3.3.1.min.js"></script>
 <script src="../../lib/bootstrap-4.0.0.js"></script>
 <script src="../../lib/parallax.min.js"></script>

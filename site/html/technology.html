@@ -13,41 +13,50 @@
 
 <body>
     <!-- navgation bar -->
-    <div class="nav-main">
-        <a href="home.html#home" class="navItem"><img id="icon-home" src="../../images/home.png"></a>
-        <a href="home.html#about" class="navItem"><img id="icon-about" src="../../images/about.png"></a>
-        <a href="home.html#works" class="navItem"><img id="icon-works" src="../../images/works.png"></a>
-        <a href="home.html#contact" class="navItem"><img id="icon-contact" src="../../images/contact.png"></a>
+  <div class="nav-name">
+    <h1>Taishi Hayakawa</h1>
+  </div>
+  <a href="#" class="nav-menu hide-desktop">
+    <img src="../../images/ham.svg" alt="toggle menu" id="menu">
+  </a>
+  <div class="nav show-desktop hide-mobile" id="nav">
+    <div id="exit" class="exit-btn hide-desktop"><img src="../../images/exit.svg" alt="exit menu"></div>
+    <div class="navItem" id="nav-home">
+      <img src="../../images/Asset1.svg" alt="">
+      <a href="home.html#home">
+        <h1>HOME</h1>
+      </a>
     </div>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a class="nav-link" href="home.html#home"><img src="../../images/home.png"><span
-                            class="sr-only">(current)</span></a></li>
-                <li class="nav-item active"><a class="nav-link" href="home.html#about"><img src="../../images/about.png"><span
-                            class="sr-only">(current)</span></a></li>
-                <li class="nav-item active"><a class="nav-link" href="home.html#works"><img src="../../images/works.png"><span
-                            class="sr-only">(current)</span></a></li>
-                <li class="nav-item active"><a class="nav-link" href="home.html#contact"><img src="../../images/contact.png"><span
-                            class="sr-only">(current)</span></a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- navigation bar --> 
+    <div class="navItem" id="nav-works">
+      <img src="../../images/Asset2.svg" alt="">
+      <a href="home.html#works">
+        <h1>WORKS</h1>
+      </a>
+    </div>
+    <div class="navItem" id="nav-about">
+      <img src="../../images/Asset3.svg" alt="">
+      <a href="home.html#about">
+        <h1>ABOUT</h1>
+      </a>
+    </div>
+    <div class="navItem" id="nav-contact">
+      <img src="../../images/Asset4.svg" alt="">
+      <a href="home.html#contact">
+        <h1>CONTACT</h1>
+      </a>
+    </div>
+  </div>
+  <!-- navigation bar -->
     <div class="container main">
         <div class="space" id="top"></div>
-        <h1>Connection with Me and Technology</h1>
+        <h1 class="header">Connection with Me and Technology</h1>
         <div class="row">
             <div class="col-md-12"><img src="../../images/tech-thumbnail.jpg" class="thumbnail"></div>
         </div>
         <br>
         <div class="row">
-            <div class="col-6 navigator"></div>
-            <div class="col-6 navigator"><a href="pocotoon.html">Next &#8594;</a></div>
+            <div class="col-6 navigator"><a href="works.html">&#8592; Gallery</a></div>
+            <div class="col-6 navigator"><a href="pocotoon.html">Pocotoon &#8594;</a></div>
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -119,12 +128,13 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-6 navigator"></div>
-            <div class="col-6 navigator"><a href="pocotoon.html">Next &#8594;</a></div>
+            <div class="col-6 navigator"><a href="works.html">&#8592; Gallery</a></div>
+            <div class="col-6 navigator"><a href="pocotoon.html">pocotoon &#8594;</a></div>
         </div>
-        <div class="space"></div>
-        <a href="#top">Back to Top</a>
-        <div class="space"></div>
+    </div>
+    <div class="space"></div>
+    <div id="back-to-top">
+        <a href="#top" >Back to Top</a>
     </div>
 
 </body>
