@@ -5,7 +5,7 @@
     width:100%;
     min-width:500px;
     padding:0;
-    margin:2;
+    margin:40px 0px 0px 30px;
     text-align:left;
     color:white;
     z-index: 5;
@@ -14,8 +14,8 @@
     font-family: lulo, Arial, Helvetica, sans-serif;
     font-size:20px;
     letter-spacing:-0.1em;
-    margin:30px 1em;
     padding:0;
+    margin:0;
 }
 .nav{
     position:fixed;
@@ -83,7 +83,7 @@
 
 .nav-menu{
     position:fixed;
-    top:35px;
+    top:40px;
     right:30px;
     cursor: pointer;
     z-index: 10;
@@ -102,7 +102,9 @@
 /* large screen */
 @media only screen and (min-width: 1020px) {
     .nav-name{
-        padding:2.5em 5em;
+        font-size:20px;
+        padding:0;
+        margin:40px 0px 0px 40px;
     }
     .nav-menu{
         top:2em;
@@ -112,7 +114,8 @@
         width:100%;
         max-width:100%;
         height:auto;
-        padding:2.5em 5em;
+        padding:0;
+        margin:40px 40px 0 0;
         
         background:none;
         align-items:flex-start;
@@ -120,33 +123,25 @@
         justify-content: flex-end;
         z-index:5;
     }
+    .navItem{
+        margin:0;
+        margin-right:30px;
+    }
     .navItem a{
         font-size:20px;
     }
     /* icons */
         #nav-home img{
-            right:18%;
-            top:-18px;
-            
         }
         #nav-works img{
-            right:20px;
-            top:-14px;
-            
         }
         #nav-about img{
-            right:18px;
-            top:-14px;
         }
         #nav-contact img{
-            right:33px;
-            top:-18px;
-            
         }
     /*  */
     .show-desktop{
         display:flex;
-        margin:0;
     }
     .hide-desktop{
         display:none;

@@ -58,7 +58,7 @@ var works = [
     'filmScreen.png',
     'lightInDark.jpg',
     'seattle.jpg',
-    'show.jpg',
+    'shoe.jpg',
     'soccer.gif',
     'tomato.jpg',
     'blueberry.jpg',

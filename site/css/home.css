@@ -5,7 +5,11 @@ html {
     position:fixed;
     width:100%;
     height:100vh;
-    background: linear-gradient(#447291, #19316d) fixed;
+    background-image: -webkit-linear-gradient(top, #447291, #19316d); 
+    background-image:    -moz-linear-gradient(top, #447291, #19316d); 
+    background-image:     -ms-linear-gradient(top, #447291, #19316d); 
+    background-image:      -o-linear-gradient(top, #447291, #19316d); 
+    background-image:         linear-gradient(top, #447291, #19316d);
     z-index:-100;
 }
 body{
