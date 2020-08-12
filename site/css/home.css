@@ -151,7 +151,8 @@ a:hover{
         padding-bottom:0em;
     }
     #about{
-        margin-top:0;
+        margin-top:20vh;
+        height:initial;
     }
     #contact{
         margin-top:0;

@@ -38,8 +38,13 @@
 }
 .navItem a{
     color:white;
+    margin:0;
+}
+.navItem h1{
     font-family: lulo, sans-serif;
     letter-spacing: -0.15em;
+    font-size: 20px;
+    margin:0;
 }
 .navItem a:hover{
     color:white;
@@ -57,28 +62,25 @@
 /* icons */
     #nav-home img{
         right:18%;
-        top:-11px;
+        top:-50%;
         transform: rotate(-15deg);
     }
     #nav-works img{
-        right:40px;
-        top:-5px;
+        right:25%;
+        top:-40%;
         transform: rotate(5deg);
     }
     #nav-about img{
-        right:37px;
-        top:-0px;
+        right:20%;
+        top:-40%;
     }
     #nav-contact img{
-        right:60px;
-        top:-9px;
+        right:30%;
+        top:-50%;
         transform: rotate(10deg);
     }
 /*  */
-.navItem h1{
-    font-size: 28px;
-    margin:0;
-}
+
 .nav-menu{
     position:fixed;
     top:35px;
@@ -118,7 +120,7 @@
         justify-content: flex-end;
         z-index:5;
     }
-    .navItem h1{
+    .navItem a{
         font-size:20px;
     }
     /* icons */
