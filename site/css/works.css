@@ -29,6 +29,12 @@ p{
 .navigator .navigator-option{
   flex:1;
 }
+.right{
+  text-align: right;
+}
+.left{
+  text-align: left;
+}
 a{
   font-family: lulo, sans-serif;
   font-size:20px;

@@ -141,7 +141,7 @@ a:hover{
 /* */
 @media only screen and (max-width: 1020px) {
     .header{
-        font-size:2em;
+        font-size:1.5em;
         letter-spacing:-0.1em;
         padding-bottom:0em;
     }
@@ -149,6 +149,12 @@ a:hover{
         font-size:1.2em;
         letter-spacing:-0.1em;
         padding-bottom:0em;
+    }
+    #about{
+        margin-top:0;
+    }
+    #contact{
+        margin-top:0;
     }
     #contact h2{
         font-size:0.7em;

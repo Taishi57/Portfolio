@@ -10,7 +10,7 @@ body{
     max-width:600px;
     float:center;
 }
-img{
+.row img{
     margin-top:20px;
     width:100%;
     object-fit:contain;
@@ -51,6 +51,13 @@ a:hover{
     color:rgb(109, 209, 255);
     text-decoration: none;
 }
+.right{
+    text-align: right;
+}
+.left{
+    text-align:left;
+}
+
 .space{
     padding:12vh;
 }
@@ -65,8 +72,10 @@ a:hover{
 
 @media only screen and (max-width: 750px) {
     body{background:#283e7a;}
-    h1{font-size:60px;}
-    h2{font-size:40px;}
+    .header{
+        font-size: 2em;
+    }
+    h2{font-size:1.5em;}
     p{font-size:16px;
     line-height:20px;}
     a{font-size:16px;}
