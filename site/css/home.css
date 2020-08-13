@@ -20,21 +20,23 @@ body{
     
 }
 .space{
-    height:20vh;
+    height:25vh;
 }
 #home{
-    height:100vh;
     display:flex;
 }
 #home img{
-    height:70vh;
+    height:60vh;
     max-width:100%;
     object-fit:contain;
     margin:auto;
 }
-
+.space h2{
+    font-family: lulo, sans-serif;
+    font-size:18px;
+    margin-top:5vh;
+}
 #about{
-    height:100vh;
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -49,40 +51,57 @@ body{
 }
 #contact{
     margin-top:-20vh;
-    height:100vh;
     display:flex;
     flex-direction:column;
     justify-content: center;
-}
-#contact div{
-    align-items: center;
-    display:flex;
-    flex-direction: column;
-}
-#contact div div{
-    margin:0.8em;
-    display:flex;
-    flex-direction:row;
-    justify-content: left;
+    z-index: -1;
 }
 #contact img{
-    width:2em;
-    margin-right:1em;
-    object-fit: contain;
+    margin:-16px 0 0 15px;
+    width:70px;
 }
-#envelope img{
-    margin-top:-0.9em;
+#contact form{
+    width:50%;
+    margin:0 auto;
 }
-#comment img{
-    margin-top:-0.3em;
-}
-#contact a{
-    width:600px;
+#contact .form-section{
+    text-align: left;
+    margin-bottom:25px;
 }
 #contact h2{
-    text-align: left;
-    font-size: 1.1em;
-    letter-spacing: -0.1em;
+    font-family: lulo,sans-serif;
+    font-size:14px;
+    letter-spacing: -2px;
+    margin-left:3px;
+}
+#contact input, #contact textarea{
+    width:100%;
+    border-radius: 20px;
+    border:none;
+    outline:none;
+    overflow: hidden;
+    padding:8px 15px;
+    opacity: 80%;
+}
+#contact input:focus, #contact textarea:focus{
+    opacity: 100%;
+}
+#contact .submit-button{
+    width:100%;
+    border-radius: 20px;
+    margin-top:30px;
+    border:solid 2px skyblue;
+    background:none;
+    font-family: lulo, sans-serif;
+    letter-spacing:-2px;
+    color:white;
+    padding:22px 0 16px;
+    display:flex;
+    justify-content: center;
+}
+#contact .submit-button:hover{
+    background-color: skyblue;
+    color:black;
 }
     
 @font-face { 
@@ -109,7 +128,7 @@ a:hover{
     font-size:3em;
     font-family: lulo,sans-serif;
     letter-spacing:-0.1em;
-    padding-bottom:1em;
+    margin-bottom:30px;
 }
 /* project section */
 .projects .title{
@@ -140,19 +159,29 @@ a:hover{
     background:rgb(15, 35, 80);
     width:100%;
     padding:5vh;
+    z-index: 2;
+}
+#back-to-top a{
+    font-size: 18px;
 }
 
-/* */
+/* small screen */
 @media only screen and (max-width: 1020px) {
+    .space{
+        height:18vh;
+    }
     .header{
-        font-size:1.5em;
+        font-size:22px;
         letter-spacing:-0.1em;
-        padding-bottom:0em;
+        margin-bottom:20px;
     }
     .projects .title{
         font-size:1.2em;
         letter-spacing:-0.1em;
         padding-bottom:0em;
+    }
+    .projects .description{
+        margin-top:1em;
     }
     #about{
         margin-top:20vh;
@@ -161,14 +190,18 @@ a:hover{
     #contact{
         margin-top:0;
     }
+    #contact img{
+        margin:-10px 0 0 5px;
+        width:40px;
+    }
+    #contact form{
+        width:80%;
+    }
     #contact h2{
         font-size:0.7em;
     }
-    #contact a{
-        width:100%;
-    }
-    .projects .description{
-        margin-top:1em;
+    #back-to-top a{
+        font-size:12px;
     }
 }
 @media (min-width: 1020px) {
