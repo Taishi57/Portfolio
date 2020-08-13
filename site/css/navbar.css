@@ -1,5 +1,14 @@
 @font-face { 
     font-family: lulo; src: url('../../lib/Lulo-Clean-W01-One-Bold.ttf'); } 
+#navbar{
+    top:0;
+    transition:top 0.3s;
+    position: fixed;
+    background:#0f2350;
+    width:100%;
+    height:80px;
+    z-index: 2;
+}
 .nav-name{
     position:fixed;
     width:100%;
@@ -19,7 +28,6 @@
 }
 .nav{
     position:fixed;
-    top:0;
     display:flex;
     background-color:#1b375c;
     width:70%;
@@ -63,7 +71,7 @@
     #nav-home img{
         right:18%;
         top:-50%;
-        transform: rotate(-15deg);
+        transform: rotate(-13deg);
     }
     #nav-works img{
         right:25%;
@@ -102,6 +110,9 @@
 }
 /* large screen */
 @media only screen and (min-width: 1020px) {
+    #navbar{
+        height:110px;
+    }
     .nav-name{
         padding:0;
         margin:40px 0px 0px 40px;
@@ -119,7 +130,6 @@
         height:auto;
         padding:0;
         margin:40px 40px 0 0;
-        
         background:none;
         align-items:flex-start;
         flex-direction:row;
