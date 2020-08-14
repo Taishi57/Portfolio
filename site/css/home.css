@@ -61,7 +61,8 @@ body{
     width:70px;
 }
 #contact form{
-    width:50%;
+    max-width: 100%;
+    width:500px;
     margin:0 auto;
 }
 #contact .form-section{
@@ -98,6 +99,8 @@ body{
     padding:22px 0 16px;
     display:flex;
     justify-content: center;
+    outline:none;
+    cursor: pointer;
 }
 #contact .submit-button:hover{
     background-color: skyblue;
@@ -193,9 +196,6 @@ a:hover{
     #contact img{
         margin:-10px 0 0 5px;
         width:40px;
-    }
-    #contact form{
-        width:80%;
     }
     #contact h2{
         font-size:0.7em;
