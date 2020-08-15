@@ -39,25 +39,25 @@ var projects = [
     {
         name: 'Echo Thoughts',
         thumbnail: '../../images/echo-thumbnail.png',
-        description: 'Echo Thoughts is an app that provides resources such as reminder daily task, cognitive games, and studying tools/tips for college students who are struggling with their academic task. This is the first project created in my major IMD and we created this app as a goal to help young people who has trouble remembering things.',
+        description: 'Echo Thoughts is an app that provides resources such as reminder daily task, cognitive games, and studying tools/tips for college students who are struggling with their academic task. ',
         link: 'echo.html',
     },
     {
         name: 'Pocotoon',
         thumbnail: '../../images/pocotoon.png',
-        description: 'Pocotoon is a game created with a group of three people for our CSS 101 class assignment. The objective of this game is to claim the most territory in the given time. Pocotoon was built without any game-making software, but with a program called Processing that required us to code the game from scratch.',
+        description: 'Pocotoon is a game developed by a group of three. The objective of this game is to claim the most territory in the given time. Pocotoon was built using program called Processing.',
         link: 'pocotoon.html',
     },
     {
         name: 'Connection with Me and Technology',
         thumbnail: '../../images/tech-thumbnail.jpg',
-        description: 'Here I will document what I have expirenced when I took the course BISIA 240. I had a chance to work on multiple projects, mostly centered around modern technology. This process lead me to a journey to search my connection of myself and digital technology and how it has changed my life.',
+        description: 'During college I had a chance to work on multiple art projects mostly centered around modern technology. This process lead me to a journey to search my connection of myself to digital technology and how it has changed my life.',
         link: 'technology.html',
     },
     {
         name: 'Art Gallery',
         thumbnail: '../../images/gallery.png',
-        description: 'This is my collection of my past works. I have a variety of artstyles to experiment with my creativity.',
+        description: 'This is my collection of my past works. I tested various artstyles to explore my creativity.',
         link: 'works.html',
     },
 ];
@@ -70,6 +70,7 @@ for (i = 0; i < projects.length; i++) {
                     '<div class="col-md-7 thumbnail"><a href="' + projects[i].link + '"><img src="' + projects[i].thumbnail + '"></img></a></div>'+
                 '<div class="col-md-5 description">'+
                 '<p>' + projects[i].description + '</p>'+
+                '<button>Learn More</button>'+
             '</div>'+
         '</div>'
     );

@@ -20,7 +20,7 @@ body{
     
 }
 .space{
-    height:25vh;
+    height:20vh;
 }
 #home{
     display:flex;
@@ -30,6 +30,9 @@ body{
     max-width:100%;
     object-fit:contain;
     margin:auto;
+}
+.scroll-button a{
+    color:white;
 }
 .space h2{
     font-family: lulo, sans-serif;
@@ -42,12 +45,12 @@ body{
     justify-content: center;
 }
 #about p{
-    font-size:1em;
-    line-height: 2em;
+    font-size:20px;
+    line-height: 35px;
 }
 #about span{
     color:rgb(105, 221, 134);
-    font-size:1.4em;
+    font-size:1.2em;
 }
 #contact{
     margin-top:-20vh;
@@ -115,15 +118,7 @@ p{
     font-family:sans-serif;
     text-align:left;
     line-height: 1.4em;}
-
-a{
-    font-size:25px;
-    color:white;
-    font-family:lulo, sans-serif;
-    letter-spacing: -0.15em;
-}
 a:hover{
-    color:rgb(109, 209, 255);
     text-decoration: none;}
 
 /* Title of each page */
@@ -154,9 +149,22 @@ a:hover{
 .projects .description{
     margin-top:1em;
     font-family:sans-serif;
-    font-size:1.1em;
+    font-size:20px;
     text-align:left;
     line-height: 1.4em;
+}
+.projects button{
+    font-size:20px;
+    border:none;
+    outline: none;
+    background-color: rgb(109, 209, 255);
+    padding:10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.projects button:hover{
+    background-color: rgb(80, 153, 187);
+    color:white;
 }
 #back-to-top{
     background:rgb(15, 35, 80);
@@ -165,7 +173,14 @@ a:hover{
     z-index: 2;
 }
 #back-to-top a{
-    font-size: 18px;
+    font-size:25px;
+    color:white;
+    font-family:lulo, sans-serif;
+    letter-spacing: -0.15em;
+}
+#back-to-top a:hover{
+    color:rgb(109, 209, 255);
+    text-decoration: none;
 }
 
 /* small screen */
@@ -184,11 +199,19 @@ a:hover{
         padding-bottom:0em;
     }
     .projects .description{
+        font-size: 16px;
         margin-top:1em;
+    }
+    .projects button{
+        font-size:16px;
     }
     #about{
         margin-top:20vh;
         height:initial;
+    }
+    #about p{
+        font-size: 16px;
+        line-height: 25px;
     }
     #contact{
         margin-top:0;
