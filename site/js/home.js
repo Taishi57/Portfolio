@@ -70,7 +70,7 @@ for (i = 0; i < projects.length; i++) {
                     '<div class="col-md-7 thumbnail"><a href="' + projects[i].link + '"><img src="' + projects[i].thumbnail + '"></img></a></div>'+
                 '<div class="col-md-5 description">'+
                 '<p>' + projects[i].description + '</p>'+
-                '<button>Learn More</button>'+
+                '<a href="' + projects[i].link + '"><button>Learn More</button></a>'+
             '</div>'+
         '</div>'
     );
