@@ -69,14 +69,12 @@
 }
 /* icons */
     #nav-home img{
-        right:18%;
-        top:-50%;
-        transform: rotate(-13deg);
+        right:15%;
+        top:-70%;
     }
     #nav-works img{
         right:25%;
-        top:-40%;
-        transform: rotate(5deg);
+        top:-50%;
     }
     #nav-about img{
         right:20%;
@@ -84,8 +82,7 @@
     }
     #nav-contact img{
         right:30%;
-        top:-50%;
-        transform: rotate(10deg);
+        top:-60%;
     }
 /*  */
 
@@ -115,7 +112,7 @@
     }
     .nav-name{
         padding:0;
-        margin:40px 0px 0px 40px;
+        margin:45px 0px 0px 100px;
     }
     .nav-name h1{
         font-size:20px;
@@ -129,7 +126,7 @@
         max-width:100%;
         height:auto;
         padding:0;
-        margin:40px 40px 0 0;
+        margin:45px 100px 0 0;
         background:none;
         align-items:flex-start;
         flex-direction:row;

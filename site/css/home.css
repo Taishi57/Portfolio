@@ -20,7 +20,7 @@ body{
     
 }
 .space{
-    height:20vh;
+    height:17.5vh;
 }
 #home{
     display:flex;
@@ -44,9 +44,10 @@ body{
     flex-direction:column;
     justify-content: center;
 }
-#about p{
-    font-size:20px;
+#about ul{
+    font-size:26px;
     line-height: 35px;
+    text-align: left;
 }
 #about span{
     color:rgb(105, 221, 134);
@@ -154,12 +155,14 @@ a:hover{
     line-height: 1.4em;
 }
 .projects button{
+    background-color: rgb(64, 109, 161);
+    color:white;
+    height:50px;
+    border-radius: 25px;
     font-size:20px;
     border:none;
     outline: none;
-    background-color: rgb(109, 209, 255);
-    padding:10px 20px;
-    border-radius: 10px;
+    padding:10px 30px;
     cursor: pointer;
 }
 .projects button:hover{

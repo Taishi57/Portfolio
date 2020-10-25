@@ -12,30 +12,36 @@ $('.collapse').on("click", "a:not([data-toggle])", null, function () {
     $('.collapse').collapse('hide');
 });
 
-//contacts
-$('#envelope').mouseover(function(){
-    $(this).find('> img').attr('src','../../images/envelope-open.png');
-}).mouseleave(function(){
-    $(this).find('> img').attr('src','../../images/envelope-close.png');
-});
-$('#comment').mouseover(function(){
-    $(this).find('> img').attr('src','../../images/comment-open.png');
-}).mouseleave(function(){
-    $(this).find('> img').attr('src','../../images/comment-close.png');
-});
-$('.navbar').on('hide.bs.collapse', function () {
-    $('nav').css('background','');
-  });
-$('.navbar').on('show.bs.collapse', function () {
-    $('nav').css('background','rgba(0, 0, 0, 50%)');
-});
+// //contacts
+// $('#envelope').mouseover(function(){
+//     $(this).find('> img').attr('src','../../images/envelope-open.png');
+// }).mouseleave(function(){
+//     $(this).find('> img').attr('src','../../images/envelope-close.png');
+// });
+// $('#comment').mouseover(function(){
+//     $(this).find('> img').attr('src','../../images/comment-open.png');
+// }).mouseleave(function(){
+//     $(this).find('> img').attr('src','../../images/comment-close.png');
+// });
+// $('.navbar').on('hide.bs.collapse', function () {
+//     $('nav').css('background','');
+//   });
+// $('.navbar').on('show.bs.collapse', function () {
+//     $('nav').css('background','rgba(0, 0, 0, 50%)');
+// });
 
-$(document).click(function () {
-    $('.navbar-collapse').collapse('hide');
-});
+// $(document).click(function () {
+//     $('.navbar-collapse').collapse('hide');
+// });
 
 
 var projects = [
+    {
+        name:'Rising Sun Esports',
+        thumbnail:'../../images/rs-thumbnail.png',
+        description:'I am a co-founder of a japanese esports team, and I was also in change of all the main graphic line, including the logo',
+        link:'risingsun.html',
+    },
     {
         name: 'Echo Thoughts',
         thumbnail: '../../images/echo-thumbnail.png',
@@ -48,12 +54,12 @@ var projects = [
         description: 'Pocotoon is a game developed by a group of three. The objective of this game is to claim the most territory in the given time. Pocotoon was built using program called Processing.',
         link: 'pocotoon.html',
     },
-    {
-        name: 'Connection with Me and Technology',
-        thumbnail: '../../images/tech-thumbnail.jpg',
-        description: 'During college I had a chance to work on multiple art projects mostly centered around modern technology. This process lead me to a journey to search my connection of myself to digital technology and how it has changed my life.',
-        link: 'technology.html',
-    },
+    // {
+    //     name: 'Connection with Me and Technology',
+    //     thumbnail: '../../images/tech-thumbnail.jpg',
+    //     description: 'During college I had a chance to work on multiple art projects mostly centered around modern technology. This process lead me to a journey to search my connection of myself to digital technology and how it has changed my life.',
+    //     link: 'technology.html',
+    // },
     {
         name: 'Art Gallery',
         thumbnail: '../../images/gallery.png',

@@ -93,3 +93,39 @@ a:hover{
 @media (min-width: 1200px){
     .container{width:960px;}
 }
+
+  #rs-carousel .carousel-indicators {
+    margin: 0px;
+    overflow: none;
+    position: static;
+    white-space: nowrap;
+    width: 100%;
+  }
+  #rs-carousel .carousel-indicators li{
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    display: inline-block;
+    height: auto;
+    margin: 0 2px !important;
+    width: auto;
+  }
+  #rs-carousel .carousel-indicators li img {
+    max-height:60px;
+    display: block;
+    opacity: 0.5;
+  }
+  #rs-carousel .carousel-indicators li.active img {
+    opacity: 1 !important;
+  }
+  #rs-carousel .carousel-indicators li:hover img {
+    opacity: 0.75;
+  }
+  #rs-carousel .carousel-outer {
+    position: relative;
+  }
+  .carousel-inner>.item {
+    -webkit-transition: -webkit-transform 0.5s ease-in-out !important;
+    -o-transition: -o-transform 0.5s ease-in-out !important;
+    transition: transform 0.5s ease-in-out !important;
+}
