@@ -42,42 +42,114 @@
 // }
 
 var works = [
-    'Expedition1.png',
-    'Expedition2.png',
-    'TokyoThrowdown1.png',
-    'TokyoThrowdown2.png',
-    'supernova.png',
-    'RS-lockscreen.png',
-    '50kills.gif',
-    'Uwajimaya.jpg',
-    'filmScreen.png',
-    'lightInDark.jpg',
-    'seattle.jpg',
-    'shoe.jpg',
-    'soccer.gif',
-    'tomato.jpg',
-    'blueberry.jpg',
-    'forte.jpg',
-    'lemon.jpg',
-    'penny.jpg',
-    'stationary.jpg',
-    'toast.jpg',
-    'battlefield.jpg',
-    'uw.jpg',
-    'desk.jpg',
-    'leo.jpg',
-    'musicalBattle.gif'];
+    {
+        title:'Expedition1.png',
+        desc:'One of the style frame for a documentary film trailer. Made multiple themes to give the client options to choose thier liking.'
+    },
+    {
+        title:'Expedition2.png',
+        desc:'One fo the style frame for a documentary film trailer. Made multiple themes to give the client options to choose thier liking.'
+    },
+    {
+        title:'TokyoThrowdown1.png',
+        desc:'Mockup graphic design for indroducing the three dancers, in <i>Roboto Crew</i>.'
+    },
+    {
+        title:'TokyoThrowdown2.png',
+        desc:'Mockup graphic design for a dance festival that will take place in Tokyo, Japan. The logo is also crafted by me. '
+    },
+    {
+        title:'supernova.png',
+        desc:'Mockup of one of the design boards of a preview that shows the transition from footage into a full-screen title card. '
+    },
+    {
+        title:'RS-lockscreen.png',
+        desc:'Lock screen of an esports organization.'
+    },
+    {
+        title:'LightInDark.jpg',
+        desc:'Charcoal self-portrait in the dark with one light source. Represents insecurity and being attracted to freedom and/or confort.'
+    },
+    {
+        title:'50kills.gif',
+        desc:'This gif animation was created with an app called <i>Folioscope</i> which lets to drawn flipnote animation on your smartphone/tablet. They are all drawn frame by frame which my fingers, unlike the methods of using modern animating programs that automatically generates the movements for you. This animation shows 50 unique ways of a stickman defeating a group of stickmen.'
+    },
+    {
+        title:'Uwajimaya.jpg',
+        desc:'A contest entry for a toto bag design contest for a local japanese supermarket called <i>Uwajimaya</i>. I listed various icons that resembles the japanese tradition to make it look enjoyable to watch if it were to become a toto bag.'
+    },
+    {
+        title:'filmScreen.png',
+        desc:'A advertisement poster for a film event at a unversity. The film was about chinese adoptees so I made the color red and yellow which is the same color used in China\'s flag. I made the border around the title look like the films in the old fashioned video cameras'
+    },
+    {
+        title:'seattle.jpg',
+        desc:'Lock screen illustration of the city Seattle, made with Adobe Illustrator.'
+    },
+    {
+        title:'shoe.jpg',
+        desc:'Realistic sketch of a show. The multiple textures of the shoe such as the leather and the rubber made me use different techniques to be able to accurately represent the surface. This also gave me an opportunity to try out the different degrees of the pencil (6H-6B) and see how the different hardness affects how my drawing looks.'
+    },
+    {
+        title:'soccer.gif',
+        desc:'This gif animation was created with an app called <i>Folioscope</i> which lets to drawn flipnote animation on your smartphone/tablet. They are all drawn frame by frame which my fingers, unlike the methods of using modern animating programs that automatically generates the movements for you. This animation\'s theme is soccer, I tried to make a humorous scene of characters doing ridiculous &#x22;soccer&#x22;.'
+    },
+    {
+        title:'tomato.jpg',
+        desc:'This was drawn with an iPad Pro using digital colored pencil. Many artists draws fruits in their perfect form, but I gave it a little twist by deliberately deforming the fruits. This not only avoids the common fruits drawings, but it adds to the challenge of drawing the juice of the interior. This drawing really tested my observation use of colors to be able to successfully draw the fruit realistically.'
+    },
+    {
+        title:'blueberry.jpg',
+        desc:'This was drawn with an iPad Pro using digital colored pencil. Many artists draws fruits in their perfect form, but I gave it a little twist by deliberately deforming the fruits. This not only avoids the common fruits drawings, but it adds to the challenge of drawing the juice of the interior. This drawing really tested my observation use of colors to be able to successfully draw the fruit realistically.'
+    },
+    {
+        title:'forte.jpg',
+        desc:'This is a mockup poster for a band concert in my highschool. Since it is a music concert, I designed the F like a music sheet on its side. The edge of the poster is dark so it seems similar like an old sheet of paper that were used by classic musicians.'
+    },
+    {
+        title:'lemon.jpg',
+        desc:'This was drawn with an iPad Pro using digital colored pencil. Many artists draws fruits in their perfect form, but I gave it a little twist by deliberately deforming the fruits. This not only avoids the common fruits drawings, but it adds to the challenge of drawing the juice of the interior. This drawing really tested my observation use of colors to be able to successfully draw the fruit realistically.'
+    },
+    {
+        title:'penny.jpg',
+        desc:'This is a digital drawing using Adobe Photoshop. I wanted to challenge myself by using colors that I wouldn\t usually use as a shadow; in this case it is purple.'
+    },
+    {
+        title:'stationary.jpg',
+        desc:'Realistic sketch of multiple stationaries drawn with graphite pencil.'
+    },
+    {
+        title:'toast.jpg',
+        desc:'This is made with photoshop where it seems like I burned the words on to the toast. This was one of my first attempt at using photoshop other than using it to draw.'
+    },
+    {
+        title:'battlefield.jpg',
+        desc:'This is an attempt at using photoshop to make two people seem like they are in a battle field, but in reality they are just posing and holding a toy gun.'
+    },
+    {
+        title:'uw.jpg',
+        desc:'This is a lockscreen with a color theme of University of Washington. I used an isometric style which is one of my favorite art style.'
+    },
+    {
+        title:'desk.jpg',
+        desc:'This drawing was drawn with graphite pencils. This drawing shows the use of two point persective, which is a method using lines to create the illusion of a space on a 2D surface. '
+    },
+    {
+        title:'leo.jpg',
+        desc:'A portrait drawing using only two colors: red and green. This added a challenge and intresting results by using complementary color.'
+    },
+    {
+        title:'musicalBattle.gif',
+        desc:'This gif animation was created with an app called <i>Folioscope</i> which lets to drawn flipnote animation on your smartphone/tablet. They are all drawn frame by frame which my fingers, unlike the methods of using modern animating programs that automatically generates the movements for you. This animation shows a fight against an enemy with a special abilty to control musical elements. I used some musical principles to create some unique interactions during the fight.'
+    }];
 
 for (i = 0; i < works.length; i++) {
     $('.masonry').append(
         '<div class="brick">'+
-            '<img src="../../artworks/'+works[i]+'" alt="" title="">'+
+            '<img src="../../artworks/'+works[i].title+'" alt="" data-desc="'+works[i].desc+'">'+
         '</div>'
     );
 }
-
-
-
 
 // //load
 // $('.high').on("load", function () {
@@ -87,9 +159,10 @@ for (i = 0; i < works.length; i++) {
 
 //zoom
 $('.masonry img').click(function () {
-    var $imgsrc = $(this).attr('src');
+    var $imgsrc = $(this);
     $('.zoom').css('display', 'flex');
-    $('.zoom img').attr('src', $imgsrc);
+    $('#zoom-img img').attr('src', $imgsrc.attr('src'));
+    $('#zoom-desc p').html($imgsrc.attr('data-desc'));
 });
 $('.zoom').click(function () {
     $(this).css('display', 'none');

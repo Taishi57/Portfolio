@@ -212,9 +212,10 @@ a:hover{
         margin-top:20vh;
         height:initial;
     }
-    #about p{
-        font-size: 16px;
+    #about ul{
+        font-size:16px;
         line-height: 25px;
+        text-align: left;
     }
     #contact{
         margin-top:0;
