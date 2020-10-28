@@ -103,7 +103,8 @@ a:hover{
   margin:auto;
   background-color:rgb(255, 245, 238);
   padding: 20px;
-  min-width:300px;
+  min-width:200px;
+  width:100%;
   max-width:600px;
   margin: auto 10px;
 }
