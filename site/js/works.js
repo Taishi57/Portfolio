@@ -67,7 +67,7 @@ var works = [
         desc:'Lock screen of an esports organization.'
     },
     {
-        title:'LightInDark.jpg',
+        title:'lightInDark.jpg',
         desc:'Charcoal self-portrait in the dark with one light source. Represents insecurity and being attracted to freedom and/or confort.'
     },
     {
