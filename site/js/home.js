@@ -38,31 +38,31 @@ $('.collapse').on("click", "a:not([data-toggle])", null, function () {
 var projects = [
     {
         name:'Rising Sun Esports',
-        thumbnail:'../../images/rs-thumbnail.png',
+        thumbnail:'images/rs-thumbnail.png',
         description:'I am a co-founder of a japanese esports team, and I was also in change of all the main graphic line, including the logo',
         link:'risingsun.html',
     },
     {
         name: 'Echo Thoughts',
-        thumbnail: '../../images/echo-thumbnail.png',
+        thumbnail: 'images/echo-thumbnail.png',
         description: 'Echo Thoughts is an app that provides resources such as reminder daily task, cognitive games, and studying tools/tips for college students who are struggling with their academic task. ',
         link: 'echo.html',
     },
     {
         name: 'Pocotoon',
-        thumbnail: '../../images/pocotoon.png',
+        thumbnail: 'images/pocotoon.png',
         description: 'Pocotoon is a game developed by a group of three. The objective of this game is to claim the most territory in the given time. Pocotoon was built using program called Processing.',
         link: 'pocotoon.html',
     },
     // {
     //     name: 'Connection with Me and Technology',
-    //     thumbnail: '../../images/tech-thumbnail.jpg',
+    //     thumbnail: 'images/tech-thumbnail.jpg',
     //     description: 'During college I had a chance to work on multiple art projects mostly centered around modern technology. This process lead me to a journey to search my connection of myself to digital technology and how it has changed my life.',
     //     link: 'technology.html',
     // },
     {
         name: 'Art Gallery',
-        thumbnail: '../../images/gallery.png',
+        thumbnail: 'images/gallery.png',
         description: 'This is my collection of my past works. I tested various artstyles to explore my creativity.',
         link: 'works.html',
     },
